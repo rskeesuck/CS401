@@ -1,0 +1,107 @@
+/* BROS layout for CS516 project */
+
+body{
+  background-color: #d3d3d3;
+}
+
+p{
+  color: #1d262c;
+  font-family: "Trebuchet", Trebuchet, sans-serif;
+}
+h1{
+  font-size: 75px;
+}
+
+h3 {
+  color: #1d262c;
+  font-family: "Trebuchet", Trebuchet, sans-serif;
+}
+
+span{
+  color: #7395AE;
+}
+
+.logo{
+  background-color: #d3d3d3;
+  float: left;
+  padding-right: 20px;
+
+}
+
+.header{
+  font-family: "Trebuchet", Trebuchet, sans-serif;
+  color: #1d262c;
+  padding-bottom: 50px;
+  line-height: 10px;
+}
+
+.navbar{
+  clear: left;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1d262c;
+}
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #7395AE;
+    text-align: center;
+    padding: 16px;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-decoration: none;
+    font-family: "Trebuchet", Trebuchet, sans-serif;
+}
+
+li a:hover {
+    background-color: #557A95;
+    color: white;
+}
+
+.signup {
+
+    font-family: "Trebuchet", Trebuchet, sans-serif;
+    height: 50px;
+    width: 100px;
+    background-color: #1d262c;
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 9px #999;
+    
+}
+
+.signup:hover {background-color: #3e8e41}
+
+.signup:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+
+.mainphoto{
+  padding-bottom: 50px;
+}
+
+.maintext{
+  padding-bottom: 50px;
+}
+
+.photos{
+  padding-bottom: 100px;
+}
+
+#footer{
+
+}
