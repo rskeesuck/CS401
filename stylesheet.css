@@ -69,7 +69,7 @@ li a:hover {
 
     font-family: "Trebuchet", Trebuchet, sans-serif;
     height: 50px;
-    width: 100px;
+    width: 200px;
     background-color: #1d262c;
     padding: 15px 25px;
     font-size: 24px;
@@ -80,7 +80,7 @@ li a:hover {
     border: none;
     border-radius: 10px;
     box-shadow: 0 9px #999;
-    
+
 }
 
 .signup:hover {background-color: #3e8e41}
@@ -90,8 +90,11 @@ li a:hover {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 
-.mainphoto{
-  padding-bottom: 50px;
+}
+
+.login{
+  font-family: "Trebuchet", Trebuchet, sans-serif;
+  color: #1d262c;
 }
 
 .maintext{
