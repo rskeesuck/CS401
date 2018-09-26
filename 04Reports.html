@@ -37,6 +37,29 @@
         </div>
       </div>
 
+      <script>
+      /* When the user clicks on the button,
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+
+    // Close the dropdown if the user clicks outside of it
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+          for (i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
       <div class = "login">
         <form action="/action_page.php">
           First Name:<br>
@@ -50,12 +73,15 @@
           <br>
       </div>
 
+      <div class = "mainphoto">
+          <img src="FakeNews.jpg" alt= "Fake Newspaper" width="50%" class = "center">
+      </div>
 
       <div id = "footer">
         <ul>
           <li><a href="00MainPage.html">Home</a></li>
-          <li><a href="#Copyright">Copyright</a></li>
-          <li><a href="#Contact">Contact</a></li>
+          <li><a href="08Secret.html">&copy Ryan Skeesuck</a></li>
+          <li><a href="07About.html">Contact</a></li>
         </ul>
       </id>
 
