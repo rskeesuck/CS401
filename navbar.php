@@ -1,9 +1,9 @@
 
 echo'<div class="navbar">
   <ul>
-      <li><a href="00MainPage.html">Home</a></li>
-      <li><a href="02UserHome.html">My Page</a></li>
-      <li><a href="06Help.html">Help/FAQ</a></li>
-      <li><a href="07About.html">About Us</a></li>
+      <li><a href="00MainPage.php">Home</a></li>
+      <li><a href="02UserHome.php">My Page</a></li>
+      <li><a href="06Help.php">Help/FAQ</a></li>
+      <li><a href="07About.php">About Us</a></li>
   </ul>
 </div>';
