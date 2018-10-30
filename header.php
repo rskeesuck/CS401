@@ -1,9 +1,10 @@
-<head>
-  <link href="pokemon.css" type="text/css" rel="stylesheet" />
-</head>
-<body>
-  <div id="header">
-    <h1><img src="https://vignette.wikia.nocookie.net/pokemon/images/b/b4/393Piplup_Pokemon_Ranger_Guardian_Signs.png/revision/latest?cb=20150109224144"/>
-    CS401s Pokemon &trade;</h1>
-  </div>
-  <hr/>
+
+echo '<div class = "logo">
+      <img src="Logo.png" width="150px" height="150px">
+</div>
+
+<div class = "header">
+    <h1>School<span><strong>BROS</strong></span></h1>
+    <h4>School Behavior Reporting Online System</h4>
+    <hr></hr>
+</div>';
