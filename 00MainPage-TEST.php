@@ -1,25 +1,13 @@
 <!DOCTYPE html>
 <html>
     <head>
-      <link rel = "stylesheet" href="stylesheet.css"/>
-        <title>SchoolBROS:Main</title>
-        <link rel="icon" href="FavICON.png" type="image/gif" sizes="16x16">
+      <?php include_once "head.php"; ?>
     </head>
     <body>
       <?php
-       include_once "header.php"; // this will include a.php
-
+       include_once "header.php";
+       include_once "navbar.php";
         ?>
-
-      <div class = "logo">
-            <img src="Logo.png" width="150px" height="150px">
-      </div>
-
-      <div class = "header">
-          <h1>School<span><strong>BROS</strong></span></h1>
-          <h4>School Behavior Reporting Online System</h4>
-          <hr></hr>
-      </div>
 
       <div class = "signup">
 
@@ -54,13 +42,7 @@
         <img src="Graduate.png" alt= "Student Lockers" width =33%>
       </div>
 
-      <div id = "footer">
-        <ul>
-          <li><a href="00MainPage.html">Home</a></li>
-          <li><a href="08Secret.html">&copy Ryan Skeesuck</a></li>
-          <li><a href="07About.html">Contact</a></li>
-        </ul>
-      </id>
+      <?php include_once "footer.php"; ?>
 
     </body>
 </html>
