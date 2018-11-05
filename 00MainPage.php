@@ -13,11 +13,12 @@
           <a href="01LogonPage.php">Sign In</a>
           <br>
       </div>
+      <br>
       <div class = "signup">
           <a href="01LogonPage.php">New Account</a>
           <br>
       </div>
-
+    </div>
       <div class = "photo">
           <img src="TeacherMAIN01.png" alt= "Teacher writing on board" width="100%">
       </div>
@@ -33,7 +34,7 @@
         <img src="Students.png" alt= "Student Lockers" width =33%>
         <img src="Graduate.png" alt= "Student Lockers" width =33%>
       </div>
-    </div>
+
       <?php include_once "footer.php"; ?>
     </body>
 </html>
