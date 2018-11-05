@@ -18,11 +18,12 @@
       <div class = "signup">
           <a href="04Reports.php">Student Report</a>
       </div>
+    </div>
       <br>
       <div class = "photo">
-        <img src="Pencils.jpg" alt= "Pencils" width =33% class="center">
+        <img src="Pencils.jpg" alt= "Pencils" width =50% class="center">
       </div>
-    </div>
+
       <?php include_once "footer.php"; ?>
 
     </body>

@@ -8,14 +8,13 @@
        include_once "navbar.php";
        include_once "header.php";
         ?>
-
-      <div class = "login">
-        <form action="/action_page.php">
-          Username:<br>
-          <input type="text" name="username" value = "username">
-          <br>
-          <br>
-          Password:<br>
+      <div class="divcontainer">
+        <div class = "login">
+          <form action="/action_page.php">
+            Username:<br>
+            <input type="text" name="username" value = "username">
+            <br>
+            Password:<br>
           <input type="text" name="password" value="password">
           <br>
           <br>

@@ -8,59 +8,31 @@
        include_once "navbar.php";
        include_once "header.php";
         ?>
-
+    <div class="divcontainer">
       <div>
-        <h2>We'd love to hear from ya...</h2>
+        <h2>Who we are...</h2>
       </div>
-
+      <div class = maintext>
+        <p>We are a conglomerate of radicalized teachers who, bendt on classroom domination, founded this service to combat the horrors of classroom management.</p>
+      </div>
+      <br>
       <div class = "photo">
-          <img src="Coder.jpg" alt= "Hello World!" width="50%" class = "center">
+          <img src="Coder.jpg" alt= "Hello World!" width="75%" class = "center">
       </div>
 
       <div>
-        <h2>Contact us!</h2>
+        <h4>This is where you can find us:</h4>
         <br>
       </div>
-
 
       <div class = maintext>
-        <p>Lorem ipsum dolor sit amet, commune fabellas delicatissimi ei nec, ornatus comprehensam his ea. Consul phaedrum omittantur ea sea, eum minim simul ea. Aliquip meliore indoctum eos an, ne ius deserunt recteque euripidis. Ut usu mundi legere, cum te dico errem. Duo no justo insolens appellantur. Cu idque consul intellegebat eos, eos id feugait docendi menandri.</p>
-        </p>
-        <br>
-        <p>Lorem ipsum dolor sit amet, commune fabellas delicatissimi ei nec, ornatus comprehensam his ea. Consul phaedrum omittantur ea sea, eum minim simul ea. Aliquip meliore indoctum eos an, ne ius deserunt recteque euripidis. Ut usu mundi legere, cum te dico errem. Duo no justo insolens appellantur. Cu idque consul intellegebat eos, eos id feugait docendi menandri.</p>
-        </p>
+        <p>School BROS, Inc.</p>
+        <p>12345 N Main Street</p>
+        <p>Anytown, USA</p>
         <br>
         </div>
 
-        <div>
-          <h3>Send us a note!</h3>
-          <br>
-        </div>
-
-        <div class = "login">
-          <form action="/action_page.php">
-            First Name:<br>
-            <input type="text" name="First" value = "First">
-            <br>
-            <br>
-            Last Name:<br>
-            <input type="text" name="LastName" value="Last">
-            <br>
-            <br>
-            email:<br>
-            <input type="text" name="email" value="you@place.com">
-            <br>
-            <br>
-            Comment:<br>
-            <input type="text" name="comment" value="write your comment here">
-            <br>
-            <br>
-            <br>
-
-            <input type="submit" value="Submit">
-          </form>
-        </div>
-
+    </div>
       <?php include_once "footer.php"; ?>
 
     </body>
