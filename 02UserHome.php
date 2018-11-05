@@ -14,7 +14,7 @@
       </div>
 
       <div class = "signup">
-          <a href="03Record.html">Record Incident</a>
+          <a href="03Record.php">Record Incident</a>
             <br>
       </div>
 
@@ -23,7 +23,7 @@
       </div>
 
       <div class = "signup">
-          <a href="04Reports.html">Student Report</a>
+          <a href="04Reports.php">Student Report</a>
 
       </div>
       <br></br>

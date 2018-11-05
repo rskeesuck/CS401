@@ -37,6 +37,14 @@ span{
   color: #7395AE;
 }
 
+.form{
+  background-color: #d3d3d3;
+  float: right;
+  color: #1d262c;
+  font-family: "Trebuchet", Trebuchet, sans-serif;
+  padding-bottom: 50px;
+}
+
 .logo{
   background-color: #d3d3d3;
   float: left;
