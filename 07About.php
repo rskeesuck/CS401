@@ -12,7 +12,7 @@
       <div>
         <h2>Who we are...</h2>
       </div>
-      <div class = maintext>
+      <div class = "maintext">
         <p>We are a conglomerate of radicalized teachers who, bendt on classroom domination, founded this service to combat the horrors of classroom management.</p>
       </div>
       <br>
@@ -25,7 +25,7 @@
         <br>
       </div>
 
-      <div class = maintext>
+      <div class = "address">
         <p>School BROS, Inc.</p>
         <p>12345 N Main Street</p>
         <p>Anytown, USA</p>

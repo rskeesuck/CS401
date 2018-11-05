@@ -22,7 +22,7 @@
         <br>
       </div>
 
-      <div class = maintext>
+      <div class = "maintext">
         <h4>How much time will this take?</h4>
         <br>
         <p>Running the program won't take much time at all!  Most entries can be done in under a minute.</p>

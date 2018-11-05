@@ -7,7 +7,7 @@
     <div class="divcontainer">
       <h2>When coding has gone to your brain!</h2>
         <div class="photo">
-          <img src="Ryan.jpg" alt= "Crazed Teacher" width="75%" class = "center">
+          <img src="Ryan.jpg" alt= "Crazed Teacher" width="100%" class = "center">
         </div>
         <div>
           <h3>I'm sure you'd like to go back...</h3>
