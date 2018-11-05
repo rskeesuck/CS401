@@ -8,41 +8,32 @@
        include_once "navbar.php";
        include_once "header.php";
         ?>
-
+    <div class = "divcontainer">
       <div class = "signup">
-
-            <a href="01LogonPage.html">Sign In</a>
-            <br>
-
+          <a href="01LogonPage.php">Sign In</a>
+          <br>
       </div>
-
-      <div>
-        <br>
-      </div>
-
       <div class = "signup">
-          <a href="01LogonPage.html">New Account</a>
-
+          <a href="01LogonPage.php">New Account</a>
+          <br>
       </div>
-      <br></br>
 
-      <div class = "mainphoto">
+      <div class = "photo">
           <img src="TeacherMAIN01.png" alt= "Teacher writing on board" width="100%">
       </div>
 
       <h3>Track School-wide B-RTI programs in real time.</h3>
 
       <div class = "maintext">
-        <p>Lorem ipsum dolor sit amet, commune fabellas delicatissimi ei nec, ornatus comprehensam his ea. Consul phaedrum omittantur ea sea, eum minim simul ea. Aliquip meliore indoctum eos an, ne ius deserunt recteque euripidis. Ut usu mundi legere, cum te dico errem. Duo no justo insolens appellantur. Cu idque consul intellegebat eos, eos id feugait docendi menandri.</p>
+        <p>Easily collect behavior data on your class and for any student in the building.  Pull reports from the student you are tracking to search for patterns in behavior.</p>
       </div>
 
-      <div class = "photos">
+      <div class = "photo">
         <img src="Lockers.png" alt= "Student Lockers" width =33%>
         <img src="Students.png" alt= "Student Lockers" width =33%>
         <img src="Graduate.png" alt= "Student Lockers" width =33%>
       </div>
-
+    </div>
       <?php include_once "footer.php"; ?>
-
     </body>
 </html>

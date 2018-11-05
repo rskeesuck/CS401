@@ -13,7 +13,7 @@
         <h2>Need Help?  Well, here ya go...</h2>
       </div>
 
-      <div class = "mainphoto">
+      <div class = "photo">
           <img src="FirstAid.jpg" alt= "First Aid Box" width="50%" class = "center">
       </div>
 

@@ -13,7 +13,7 @@
         <h2>We'd love to hear from ya...</h2>
       </div>
 
-      <div class = "mainphoto">
+      <div class = "photo">
           <img src="Coder.jpg" alt= "Hello World!" width="50%" class = "center">
       </div>
 

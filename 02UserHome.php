@@ -28,7 +28,7 @@
       </div>
       <br></br>
 
-      <div class = "photos">
+      <div class = "photo">
         <img src="Pencils.jpg" alt= "Pencils" width =25% class="center">
       </div>
 

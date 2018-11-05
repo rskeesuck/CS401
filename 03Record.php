@@ -8,10 +8,9 @@
        include_once "navbar.php";
        include_once "header.php";
         ?>
-    <div class = "formcontainer">
+    <div class = "divcontainer">
     <div class = "form">
       <h3>Who was it?  Student Name (First, Last)</h3>
-      <br>
       <form action="/action_page.php">
         First Name of Student:<br>
         <input type="text" name="firstname"><br>
@@ -114,8 +113,9 @@
         <input type="checkbox" name="action7" value="Removed Student from the Activity"> Removed Student from the Activity<br>
         <input type="checkbox" name="action8" value="Sent to Office (ODR)"> Sent to Office (ODR)<br>
         <br>
-        <h3>Submit Your Form!</h3>
+        <h3>All done?  Submit your report here.</h3>
         <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
       </form>
         <br>
         <div>
