@@ -8,6 +8,7 @@
        include_once "navbar.php";
        include_once "header.php";
         ?>
+    <div class = "formcontainer">
     <div class = "form">
       <h3>Who was it?  Student Name (First, Last)</h3>
       <br>
@@ -125,7 +126,6 @@
         <input type="checkbox" name="behavior26" value="Littering"> Littering<br>
         <input type="checkbox" name="behavior27" value="Vandalism/Damaging School Property"> Vandalism<br>
         <input type="checkbox" name="behavior28" value="Bringing Banned Substance(s) or Proprty"> Banned Substance or Property<br>
-    </div>
     <br>
     <h3>Any other behavior(s) or observations that we need to know about?</h3>
     <br>
@@ -146,7 +146,7 @@
         <input type="checkbox" name="action7" value="Removed Student from the Activity"> Removed Student from Activity<br>
         <input type="checkbox" name="action8" value="Sent to Office (ODR)"> Sent to Office (ODR)<br>
       </div>
-
+    </div>
     <div class = "photos">
         <br>
         <img src="Graduate.png" alt= "Graduate" width =40% class="center">
