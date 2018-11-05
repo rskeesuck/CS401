@@ -89,12 +89,12 @@
       <br>
       <form>
         <input type="checkbox" name="behavior1" value="Not Following Directions"> Not Following Directions<br>
-        <input type="checkbox" name="behavior2" value="Not Prepared for Class/Materials"> Not Prepared for Class<br>
+        <input type="checkbox" name="behavior2" value="Not Prepared for Class/Materials"> Not Prepared for Class/Materials<br>
         <input type="checkbox" name="behavior3" value="Off Task"> Off Task<br>
         <input type="checkbox" name="behavior4" value="Dress Code"> Dress Code<br>
         <input type="checkbox" name="behavior5" value="Sleeping"> Sleeping<br>
         <input type="checkbox" name="behavior6" value="Excessive Tardies"> Excessive Tardies<br>
-        <input type="checkbox" name="behavior7" value="Asking to Leave the Classroom"> Asking to Leave<br>
+        <input type="checkbox" name="behavior7" value="Asking to Leave the Classroom"> Asking to Leave the Classroom<br>
         <input type="checkbox" name="behavior8" value="Cheating"> Cheating<br>
         <input type="checkbox" name="behavior9" value="Insubordination"> Insubordination<br>
       </form>
@@ -102,17 +102,17 @@
       <h3>BEHAVIOR(s) that affect(s) the student AND others:</h3>
       <br>
       <form>
-        <input type="checkbox" name="behavior10" value="Talking During Instruction"> Talking<br>
+        <input type="checkbox" name="behavior10" value="Talking During Instruction"> Talking During Instruction<br>
         <input type="checkbox" name="behavior11" value="Blurting Out"> Blurting Out<br>
-        <input type="checkbox" name="behavior12" value="Physical Touching"> Touching<br>
-        <input type="checkbox" name="behavior13" value="Disrupting the Learning Environment"> Disrupting Learning<br>
-        <input type="checkbox" name="behavior14" value="Inappropriate Language"> Language<br>
-        <input type="checkbox" name="behavior15" value="Out of Seat/Wandering"> Out of Seat<br>
+        <input type="checkbox" name="behavior12" value="Physical Touching"> Physical Touching<br>
+        <input type="checkbox" name="behavior13" value="Disrupting the Learning Environment"> Disrupting the Learning Environment<br>
+        <input type="checkbox" name="behavior14" value="Inappropriate Language"> Inappropriate Language<br>
+        <input type="checkbox" name="behavior15" value="Out of Seat/Wandering"> Out of Seat/Wandering<br>
         <input type="checkbox" name="behavior16" value="Disrespecting Other Students"> Disrespecting Other Students<br>
         <input type="checkbox" name="behavior17" value="Disrespecting the Staff"> Disrespecting the Staff<br>
-        <input type="checkbox" name="behavior18" value="Arguing with the Staff"> Arguing<br>
-        <input type="checkbox" name="behavior19" value="Stealing the Property of Others"> Stealing<br>
-        <input type="checkbox" name="behavior20" value="Damaging the Property of Others"> Damaging Property<br>
+        <input type="checkbox" name="behavior18" value="Arguing with the Staff"> Arguing with the Staff<br>
+        <input type="checkbox" name="behavior19" value="Stealing the Property of Others"> Stealing the Property of Others<br>
+        <input type="checkbox" name="behavior20" value="Damaging the Property of Others"> Damaging the Property of Others<br>
         <input type="checkbox" name="behavior21" value="Horseplay/Rough Housing"> Horseplay/Rough Housing<br>
         <input type="checkbox" name="behavior22" value="Fighting"> Fighting<br>
         <input type="checkbox" name="behavior23" value="Bullying"> Bullying<br>
@@ -124,8 +124,8 @@
         <input type="checkbox" name="behavior24" value="Running"> Running<br>
         <input type="checkbox" name="behavior25" value="Playing in Unapproved Areas"> Playing in Unapproved Areas<br>
         <input type="checkbox" name="behavior26" value="Littering"> Littering<br>
-        <input type="checkbox" name="behavior27" value="Vandalism/Damaging School Property"> Vandalism<br>
-        <input type="checkbox" name="behavior28" value="Bringing Banned Substance(s) or Proprty"> Banned Substance or Property<br>
+        <input type="checkbox" name="behavior27" value="Vandalism/Damaging School Property"> Vandalism/Damaging School Property<br>
+        <input type="checkbox" name="behavior28" value="Bringing Banned Substance(s) or Proprty"> Banned Substance(s) or Property<br>
     <br>
     <h3>Any other behavior(s) or observations that we need to know about?</h3>
     <br>
@@ -139,18 +139,20 @@
       <form>
         <input type="checkbox" name="action1" value="No Action/Observation"> No Action/Observation<br>
         <input type="checkbox" name="action2" value="Gave Verbal Warning"> Gave Verbal Warning<br>
-        <input type="checkbox" name="action3" value="Private Student Conference"> Student Conference<br>
-        <input type="checkbox" name="action4" value="Emailed Parent/Guardian"> Emailed Parent<br>
-        <input type="checkbox" name="action5" value="Phoned Parent/Guardian"> Phoned Parent<br>
-        <input type="checkbox" name="action6" value="Meeting with Parent/Guardian"> Parent Meeting<br>
-        <input type="checkbox" name="action7" value="Removed Student from the Activity"> Removed Student from Activity<br>
+        <input type="checkbox" name="action3" value="Private Student Conference"> Private Student Conference<br>
+        <input type="checkbox" name="action4" value="Emailed Parent/Guardian"> Emailed Parent/Guardian<br>
+        <input type="checkbox" name="action5" value="Phoned Parent/Guardian"> Phoned Parent/Guardian<br>
+        <input type="checkbox" name="action6" value="Meeting with Parent/Guardian"> Meeting with Parent/Guardian<br>
+        <input type="checkbox" name="action7" value="Removed Student from the Activity"> Removed Student from the Activity<br>
         <input type="checkbox" name="action8" value="Sent to Office (ODR)"> Sent to Office (ODR)<br>
+        <br>
+        <input type="submit" value="Submit">
       </div>
-    </div>
-    <div class = "photos">
-        <br>
-        <img src="Graduate.png" alt= "Graduate" width =40% class="center">
-        <br>
+      <div class = "photos">
+          <br>
+          <img src="Graduate.png" alt= "Graduate" width =75% class="center">
+          <br>
+      </div>
     </div>
 
       <?php include_once "footer.php"; ?>
