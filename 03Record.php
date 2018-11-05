@@ -132,10 +132,7 @@
         <br>
         <h3>Would You Like to Record a New Incident?</h3>
         <br>
-        <a href="03Record.php">Record New</a>
-
-        <button>Record New</button>
-          <a href="03Record.php" class="button">Record New</a>
+        <a href="03Record.php" class="button">Record New</a>
       </div>
 
     </div>
