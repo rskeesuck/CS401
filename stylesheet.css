@@ -38,6 +38,8 @@ span{
 }
 .formcontainer{
   background-color: #d3d3d3;
+  width: 50%;
+  margin: 0 auto;
 }
 
 
@@ -46,7 +48,6 @@ span{
   color: #1d262c;
   font-family: "Trebuchet", Trebuchet, sans-serif;
   padding-bottom: 50px;
-  text-align: center;
 
 }
 
