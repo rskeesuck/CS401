@@ -8,30 +8,21 @@
        include_once "navbar.php";
        include_once "header.php";
         ?>
-
-      <div class = "userpage">
-
-      </div>
+    <div class = "divcontainer">
 
       <div class = "signup">
           <a href="03Record.php">Record Incident</a>
             <br>
       </div>
-
-      <div>
-        <br>
-      </div>
-
+      <br>
       <div class = "signup">
           <a href="04Reports.php">Student Report</a>
-
       </div>
-      <br></br>
-
+      <br>
       <div class = "photo">
-        <img src="Pencils.jpg" alt= "Pencils" width =25% class="center">
+        <img src="Pencils.jpg" alt= "Pencils" width =33% class="center">
       </div>
-
+    </div>
       <?php include_once "footer.php"; ?>
 
     </body>

@@ -97,7 +97,7 @@ li a:hover {
 }
 
 .signup {
-
+    float: left;
     font-family: "Trebuchet", Trebuchet, sans-serif;
     height: 50px;
     width: 200px;
@@ -112,7 +112,7 @@ li a:hover {
     border-radius: 10px;
     box-shadow: 0 9px #999;
     padding-bottom: 50px;
-
+    clear: left;
 }
 
 .button{
