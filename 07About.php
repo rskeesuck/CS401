@@ -26,9 +26,11 @@
       </div>
 
       <div class = maintext>
-        <p>School BROS, Inc.</p>
-        <p>12345 N Main Street</p>
-        <p>Anytown, USA</p>
+        <p>School BROS, Inc.
+        12345 N Main Street
+        Anytown, USA</p>
+        <p>o: 1.208.555.1234
+          e: info@schoolbros.com</p>
         <br>
         </div>
 

@@ -29,9 +29,9 @@
             <input type="text" name="password"><br>
             First Name:<br>
             <input type="text" name="username"><br>
-            Last Name:
+            Last Name:<br>
             <input type="text" name="password"><br>
-            Submit:
+            Submit:<br>
             <input type="submit" value="Submit">
             <br>
           </form>
