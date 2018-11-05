@@ -17,7 +17,7 @@
       </div>
       <br>
       <div class = "photo">
-          <img src="Coder.jpg" alt= "Hello World!" width="75%" class = "center">
+          <img src="Coder.jpg" alt= "Hello World!" width="100%" class = "center">
       </div>
 
       <div>

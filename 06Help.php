@@ -14,7 +14,7 @@
       </div>
 
       <div class = "photo">
-          <img src="FirstAid.jpg" alt= "First Aid Box" width="50%" class = "center">
+          <img src="FirstAid.jpg" alt= "First Aid Box" width="100%" class = "center">
       </div>
 
       <div>
