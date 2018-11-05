@@ -133,7 +133,13 @@
         <h3>Would You Like to Record a New Incident?</h3>
         <br>
         <a href="03Record.php">Record New</a>
+
+        <button>Record New</button>
+          <a href="03Record.php" class="button">Link Button</a>
+          <button class="button">Button</button>
+          <input type="button" class="button" value="Input Button">
       </div>
+
     </div>
 
       <?php include_once "footer.php"; ?>

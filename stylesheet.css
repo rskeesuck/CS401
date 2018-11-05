@@ -113,6 +113,22 @@ li a:hover {
 
 }
 
+.button{
+  font-family: "Trebuchet", Trebuchet, sans-serif;
+  height: 50px;
+  width: 200px;
+  background-color: #1d262c;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
+}
+
 .signup:hover {background-color: #3e8e41}
 
 .signup:active {
