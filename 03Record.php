@@ -129,12 +129,10 @@
         <br>
         <input type="submit" value="Submit">
       </form>
-      <form>
         <br>
-        <h3>Record Another Incident?</h3>
+        <h3>Would You Like to Record a New Incident?</h3>
         <br>
-        <input type="newform" value="Record New Incident">
-      </form>
+        <a href="03Record.php">Record New</a>
       </div>
     </div>
 
