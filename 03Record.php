@@ -8,70 +8,61 @@
        include_once "navbar.php";
        include_once "header.php";
         ?>
+    <div>
+      <form>
+        First Name of Student:<br>
+        <input type="text" name="firstname"><br>
+        Last Name of Student:<br>
+        <input type="text" name="lastname">
+      </form>
+      <br>
+      <form>
+        <input type="radio" name="gender" value="male" checked> Male<br>
+        <input type="radio" name="gender" value="female"> Female<br>
+        <input type="radio" name="gender" value="other"> Other
+      </form>
+      <br>
+      <form>
+        <input type="radio" name="grade" value="6th Grade" checked> 6th Grade<br>
+        <input type="radio" name="grade" value="7th Grade"> 7th Grade<br>
+        <input type="radio" name="grade" value="8th Grade"> 8th Grade<br>
+        <input type="radio" name="grade" value="unknown"> Unknown<br>
+      </form>
+      <br>
+      <form>
+        Date of Incident:
+        <input type="date" name="date of incident">
+      </form>
+      <br>
+      <form>
+        <input type="radio" name="time of day" value="Before School" checked> Before School<br>
+        <input type="radio" name="time of day" value="Morning Break"> Morning Break<br>
+        <input type="radio" name="time of day" value="Lunch"> Lunch<br>
+        <input type="radio" name="time of day" value="Passing Period"> Passing Period<br>
+        <input type="radio" name="time of day" value="After School"> After School<br>
+        <input type="radio" name="time of day" value="During Class"> During Class<br>
+      </form>
+      <br>
+      <form>
+        <input type="radio" name="period" value="Advisory" checked> Advisory<br>
+        <input type="radio" name="period" value="1st Period"> 1st Period<br>
+        <input type="radio" name="period" value="2nd Period"> 2nd Period<br>
+        <input type="radio" name="period" value="3rd Period"> 3rd Period<br>
+        <input type="radio" name="period" value="4th Period"> 4th Period<br>
+        <input type="radio" name="period" value="5th Period"> 5th Period<br>
+        <input type="radio" name="period" value="6th Period"> 6th Period<br>
+        <input type="radio" name="period" value="7th Period"> 7th Period<br>
+        <input type="radio" name="period" value="8th Period"> 8th Period<br>
+      </form>
+      <br>
 
-      <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">What happened?</button>
-        <div id="myDropdown" class="dropdown-content">
-            <a href="#1">Category 1</a>
-            <a href="#2">Category 2</a>
-            <a href="#3">Category 3</a>
-        </div>
-      </div>
+    </div>
 
-      <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Who?</button>
-        <div id="myDropdown" class="dropdown-content">
-            <a href="#1">Category 1</a>
-            <a href="#2">Category 2</a>
-            <a href="#3">Category 3</a>
-            <a href="#3">Category 4</a>
-        </div>
-      </div>
-
-      <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Where did it happen?</button>
-        <div id="myDropdown" class="dropdown-content">
-            <a href="#1">Add Student #1</a>
-            <a href="#2">Add Additional Student</a>
-        </div>
-      </div>
-      <script>
-      /* When the user clicks on the button,
-      toggle between hiding and showing the dropdown content */
-      function myFunction() {
-        document.getElementById("myDropdown").classList.toggle("show");
-      }
-
-    // Close the dropdown if the user clicks outside of it
-      window.onclick = function(event) {
-        if (!event.target.matches('.dropbtn')) {
-
-          var dropdowns = document.getElementsByClassName("dropdown-content");
-            var i;
-          for (i = 0; i < dropdowns.length; i++) {
-          var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-            openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-
-      <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">When?</button>
-        <div id="myDropdown" class="dropdown-content">
-            <a href="#1">Now / Last 10 minutes</a>
-            <a href="#2">Enter Time</a>
-        </div>
-
-      </div>
-
-      <div class = "photos">
-        <br>
+    <div class = "photos">
         <br>
         <img src="Graduate.png" alt= "Graduate" width =40% class="center">
-      </div>
+        <br>
+    </div>
 
       <?php include_once "footer.php"; ?>
 
