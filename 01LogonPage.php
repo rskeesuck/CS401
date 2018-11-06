@@ -12,7 +12,7 @@
       <div class="divcontainer">
         <div class = "form">
           <h3>Please Sign In:</h3>
-          <form action="/action_page.php">
+          <form action="/signInHandler.php">
             Username:<br>
             <input type="text" name="username"><br>
             <br>
@@ -24,7 +24,7 @@
             <br>
           </form>
           <h3>New Account?  Sign in Here:</h3>
-          <form action="/action_page.php">
+          <form action="/newAccountHandler.php">
             Username: (user email address: jsmith@example.com)<br>
             <input type="text" name="username"><br>
             <br>

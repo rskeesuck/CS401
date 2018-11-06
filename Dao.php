@@ -8,4 +8,9 @@ class Dao {
   public function getConnection () {
     return new PDO("mysql:host={$this->host};dbname={$this->db}"}
   }
+
+
+
+
+
 ?>
