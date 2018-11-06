@@ -8,20 +8,23 @@
        include_once "navbar.php";
        include_once "header.php";
         ?>
-    <div class = "divcontainer">
-      <div class = "signup">
-          <a href="01LogonPage.php">Sign In</a>
-          <br>
-      </div>
-      <br>
-      <div class = "signup">
-          <a href="01LogonPage.php">New Account</a>
-          <br>
-      </div>
-    </div>
+
       <div class = "photo">
           <img src="TeacherMAIN01.png" alt= "Teacher writing on board" width="100%">
       </div>
+    <div class = "divcontainer">
+        <div class = "signup">
+            <a href="01LogonPage.php">Sign In</a>
+            <br>
+        </div>
+        <br>
+        <div class = "signup">
+            <a href="01LogonPage.php">New Account</a>
+            <br>
+        </div>
+    </div>
+    
+    <br>
 
       <h3>Track School-wide B-RTI programs in real time.</h3>
 
