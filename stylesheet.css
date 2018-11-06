@@ -202,5 +202,6 @@ li a:hover {
 .show {display: block;}
 
 #footer{
+  text-align: center;
   padding-top: 50px;
 }
