@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <?php $thisPage = "01LogonPage"; ?>
+<?php
+  session_start();
+    $message = isset($_SESSION['message']) ? $_SESSION['message'] : '';
+    unset($_SESSION['message']);
+?>
 <html>
     <head>
       <?php include_once "head.php"; ?>
@@ -11,6 +16,9 @@
         ?>
 
       <div class="divcontainer">
+        <?php if(!empty($message)) { ?>
+          <div class="message"><?php echo $message; ?></div>
+        <?php } ?>
         <div class = "form">
           <h3>Please Sign In:</h3>
           <form action="/Loginhandler.php">

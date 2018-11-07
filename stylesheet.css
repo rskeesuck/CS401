@@ -36,6 +36,15 @@ h4{
 span{
   color: #7395AE;
 }
+
+.message {
+  background-color: red;
+  color: white;
+  padding: 10px 10;
+  margin-bottom: 5px;
+  width: 500px;
+}
+
 .divcontainer{
   background-color: #d3d3d3;
   width: 50%;
