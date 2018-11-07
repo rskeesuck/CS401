@@ -1,4 +1,4 @@
-<div id = "footer" id="navigation">
+<div id = "footer">
   <ul>
     <li><a href="00MainPage.php">Home</a></li>
     <li><a href="08Secret.php">&copy Ryan Skeesuck</a></li>
