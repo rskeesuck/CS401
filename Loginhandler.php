@@ -24,10 +24,11 @@
 //	}
 
 
-	//require_once 'Dao.php';
-	//$dao = new DAO();
+	require_once 'Dao.php';
+	$dao = new DAO();
 
 	if(isset($_POST['CreateButton'])){
+		echo "here";
 		if($bad){
 			header('Location: 01NewLogon.php');
 			$_SESSION['validated'] = 'bad';
