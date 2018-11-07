@@ -29,6 +29,7 @@
 	echo "here";
 
 	if(isset($_POST['CreateButton'])){
+		echo "here";
 		if($bad){
 			header('Location: 01NewLogon.php');
 			$_SESSION['validated'] = 'bad';
