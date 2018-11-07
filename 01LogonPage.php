@@ -20,7 +20,8 @@
             <input type="text" name="password"><br>
             <br>
             Submit:<br>
-            <input type="submit" value="Submit">
+            <input type="submit" value="LoginButton">
+            <br>
             <br>
           </form>
           <form action="/01NewLogon.php">
