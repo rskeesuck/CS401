@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <?php session_start(); ?>
 <?php $thisPage = "00MainPage"; ?>
+<?php
+if (!isset($_SESSION['logged_in']) || !$_SESSION['logged_in']) {
+		header('Location: 00MainPage.php');
+		exit;
+  }
+  ?>
 <html>
     <head>
       <?php include_once "head.php"; ?>

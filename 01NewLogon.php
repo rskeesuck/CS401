@@ -9,6 +9,13 @@
        include_once "navbar.php";
        include_once "header.php";
         ?>
+        <?php if (isset($_SESSION['messages'])) {
+          foreach ($_SESSION['messages'] as $message) {?>
+              <div class="message <?php echo isset($_SESSION['validated']) ? $_SESSION['validated'] : '';?>"><?php
+              echo $message; ?></div>
+        <?php  }
+         unset($_SESSION['messages']);
+        ?> </div>
 
         <div class = "divcontainer">
           <div class = "form">
