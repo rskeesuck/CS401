@@ -2,8 +2,6 @@
 	session_start();
 	$username = $_POST['username'];
 	$password = $_POST['password'];
-  //$firstname = $_POST['firstname'];
-  //$lastname = $_POST['lastname'];
 
 	$messages = array();
 	$bad = false;
@@ -17,22 +15,13 @@
 		$_SESSION['messages'][] = "Password is Required";
 		$bad = true;
 	}
-  //if(empty($firstname)){
-	//	$_SESSION['messages'][] = "First Name is Required";
-//		$bad = true;
-//	}
-//  if(empty($lastname)){
-//    $_SESSION['messages'][] = "Last Name is Required";
-//    $bad = true;
-//  }
 
 	if (!preg_match('~[1-9]~', $password)||!preg_match('~[A-Z]~', $password)) {
 		$_SESSION['messages'][] = "Password must have at least one number and one uppercase letter.";
 		$bad=true;
 	}
 	if($bad){
-    //echo "what the hell?";
-    header('Location: 01LogonPage.php');
+    header('Location: index.php');
 		exit;
 	}
 	require_once 'Dao.php';

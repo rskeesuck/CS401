@@ -5,8 +5,10 @@ class Dao{
   private $db = "heroku_470e46bcfd224d6";
   private $user = "b6654bc7a1a313";
   private $pass = "bf0523a8";
+
   public function __construct(){
   	}
+
   public function getConnection () {
     return new PDO("mysql:host=us-cdbr-iron-east-01.cleardb.net;dbname=heroku_470e46bcfd224d6", "b6654bc7a1a313",
           "bf0523a8");
@@ -14,7 +16,7 @@ class Dao{
 public function addUser($username, $password){
 			$conn=$this->getConnection();
 			$saveQuery = $conn->prepare(
-				"INSERT INTO accounts (username, passwords) VALUES (:username, :passwords)");
+				"INSERT INTO accounts (username, password) VALUES (:username, :password)");
 			$saveQuery->bindParam(":username", $username);
 			$saveQuery->bindParam(":passwords", $password);
       $saveQuery->execute();
@@ -29,7 +31,7 @@ public function addUser($username, $password){
 }
   public function getUserPassword($username, $password){
 		$conn=$this->getConnection();
-		$q=$conn->prepare("SELECT username FROM accounts WHERE username=:username AND passwords=:password");
+		$q=$conn->prepare("SELECT username FROM accounts WHERE username=:username AND password=:password");
 		$q->bindParam(":username", $username);
 		$q->bindParam(":passwords", $password);
 		$q->setFetchMode(PDO::FETCH_ASSOC);
