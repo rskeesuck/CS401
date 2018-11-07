@@ -27,7 +27,7 @@
           </form>
           <form action="/01NewLogon.php">
             New Account?<br>
-            <button type="submit" value="CreateAccount" name="CreateButton"> New Account</button>
+            <button type="submit" value="NewAccount" name="NewAccountButton"> New Account</button>
           </form>
 
         </div>

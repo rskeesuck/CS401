@@ -27,7 +27,7 @@
                 <input type="text" placeholder = "password here" name="password"><br>
                 <br>
                 Submit:<br>
-                <button type="submit" value="Login" name="LoginButton">Login</button>
+                <button type="submit" value="CreateButton" name="CreateButton">Create New Account</button>
                 <br>
               </form>
           </div>

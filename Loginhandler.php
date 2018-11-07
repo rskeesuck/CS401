@@ -1,80 +1,60 @@
 <?php
+	session_start();
+	$username = $_POST['username'];
+	$password = $_POST['password'];
+  $firstname = $_POST['firstname'];
+  $lastname = $_POST['lastname'];
 
-session_start();
+	$messages = array();
+	$bad = false;
 
-$username = $_POST['username'];
-$password = $_POST['password'];
-$firstname = $_POST['firstname'];
-$lastname = $_POST['lastname'];
+	$_SESSION['presets']['username'] = $username;
+	if(empty($username)){
+		$_SESSION['messages'][] = "Username is Required";
+		$bad = true;
+	}
+	if(empty($password)){
+		$_SESSION['messages'][] = "Password is Required";
+		$bad = true;
+	}
+	if (!preg_match('~[1-9]~', $password)||!preg_match('~[A-Z]~', $password)) {
+		$_SESSION['messages'][] = "Password must have at least one number and one uppercase letter.";
+		$bad=true;
+	}
+	if($bad){
+		header('Location: index.php');
+		exit;
+	}
+	require_once 'Dao.php';
+	$dao = new DAO();
 
-echo $username;
-echo $password;
-echo $firstname;
-echo $lastname;
-
-$_SESSION['presets']['username'] = $username;
-
-$messages = array();
-$bad = false;
-
-$_SESSION['presets']['username']=$username;
-if (strlen($username) == 0) {
-  $_SESSION['messages'][] = "Username is required.";
-  $bad = true;
-}
-if (strlen($password) == 0) {
-  $_SESSION['messages'][] = "Password is required.";
-  $bad = true;
-}
-if (strlen($firstname) == 0) {
-  $_SESSION['messages'][] = "First name is required.";
-  $bad = true;
-}
-if (strlen($lastname) == 0) {
-  $_SESSION['messages'][] = "Last name is required.";
-  $bad = true;
-}
-
-// Got here, means everything validated, and the comment will post.
-unset($_SESSION['presets']);
-
-require_once("Dao.php");
-
-$dao = new Dao();
-
-if (isset($_POST['NewAccount'])) {
-  $user=$dao->getUsername($username);
-		//if the number of rows in my table with that username are zero, then create a row for the username and password.
+	if(isset($_POST['CreateButton'])){
+		$user=$dao->getUsername($username);
 		if(empty($user)){
-			$dao->addUser($username, $password);
-      //echo "here";
-			header('Location: 01NewLogon.php');
+			$dao->addUser($username, $password, $firstname, $lastname);
+			$_SESSION['logged_in']=true;
+			header('Location: 02UserHome.php');
 			exit;
 		}else{
-			$_SESSION['messages'][]= "That username already exists";
-      $bad = true;
-			//header('Location: index.php');
-			//exit;
+			$_SESSION['messages'][]="That username already exists";
+			$_SESSION['logged_in']=false;
+			header('Location: 01NewLogon.php');
+			exit;
 		}
-
-} else if (isset($_POST['LoginButton'])) {
-  $login=$dao->getUserPassword($username, $password);
-		if(!empty($login)){
-			header('Location: 01NewLogon.php');
+	}else if (isset($_POST['LoginButton'])){
+		$login=$dao->getUserPassword($username, $password);
+		if($login){
+			$_SESSION['logged_in']=true;
+			header('Location: 02UserHome.php');
 			exit;
 		}else{
-      $_SESSION['messages'][] = "Username or Password is incorrect.";
-			header('Location: 01NewLogon.php');
+			$_SESSION['messages'][]="Username or Password is incorrect.";
+			$_SESSION['logged_in']=false;
+			header('Location: 01LogonPage.php');
 			exit;
-
-  exit;
-}
-}
-if ($bad) {
-  header( 'Location: 01NewLogon.php');
-  //$_SESSION['validated'] = 'bad';
-  exit;
-}
-//header('Location: ../index.php');
-exit;
+		}
+	}
+	//All is good
+	unset($_SESSION['presets']);
+	exit;
 ?>
