@@ -15,19 +15,19 @@
             <h3>New Account?  Sign in Here:</h3>
               <form action="/Loginhandler.php">
                 First Name:<br>
-                <input type="text" name="firstname"><br>
+                <input type="text" placeholder = "First Name" name="firstname"><br>
                 <br>
                 Last Name:<br>
-                <input type="text" name="lastname"><br>
+                <input type="text" placeholder = "Last Name" name="lastname"><br>
                 <br>
                 Username: (user email address: jsmith@example.com)<br>
-                <input type="text" name="username"><br>
+                <input type="text" placeholder = "ex: jsmith@example.com" name="username"><br>
                 <br>
                 Password: (must contain one letter and one number)<br>
-                <input type="text" name="password"><br>
+                <input type="text" placeholder = "password here" name="password"><br>
                 <br>
                 Submit:<br>
-                <input type="submit" value="NewAccount">
+                <button type="submit" value="Login" name="LoginButton">Login</button>
                 <br>
               </form>
           </div>
