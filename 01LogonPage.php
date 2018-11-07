@@ -15,29 +15,19 @@
           <h3>Please Sign In:</h3>
           <form action="/Loginhandler.php">
            Username:<br>
-            <input type="text" name="username"><br>
+            <input type="text" placeholder = "username here" name="username"><br>
             <br>
             Password:<br>
-            <input type="text" name="password"><br>
+            <input type="text" placeholder = "password here" name="password"><br>
             <br>
             Submit:<br>
-            <input type="LoginButton" value="Login Button">
+            <button type="submit" value="Login" name="LoginButton">Login</button>
             <br>
             <br>
-
-            Username:
-            <input type= "text" placeholder = "username here" name = "username"><br>
-            Password:
-          <input type= "password" placeholder = "password here" name = "password" ><br>
-          <button type= "submit" value = "CreateAccount" name ="CreateButton"> Create Account</button>
-          <button type= "submit" value = "Login" name="LoginButton"> Login</button>
-
-
-
           </form>
           <form action="/01NewLogon.php">
             New Account?<br>
-            <input type="NewAccount" value="New Account">
+            <button type="submit" value="CreateAccount" name="CreateButton"> New Account</button>
           </form>
 
         </div>
