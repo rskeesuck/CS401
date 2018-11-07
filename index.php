@@ -1,6 +1,1 @@
-<?php
-session_start();
-
-include_once("00MainPage.php");
-
-?>
+<?php include_once("00MainPage.php");?>
