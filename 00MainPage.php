@@ -18,12 +18,8 @@
             <br>
         </div>
         <br>
-        <div class = "signup">
-            <a href="01LogonPage.php">New Account</a>
-            <br>
-        </div>
     </div>
-    
+
     <br>
 
       <h3>Track School-wide B-RTI programs in real time.</h3>
