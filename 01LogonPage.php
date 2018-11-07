@@ -14,7 +14,7 @@
         <div class = "form">
           <h3>Please Sign In:</h3>
           <form action="/Loginhandler.php">
-            Username:<br>
+           Username:<br>
             <input type="text" name="username"><br>
             <br>
             Password:<br>
@@ -24,6 +24,16 @@
             <input type="LoginButton" value="Login Button">
             <br>
             <br>
+
+            Username:
+            <input type= "text" placeholder = "username here" name = "username"><br>
+            Password:
+          <input type= "password" placeholder = "password here" name = "password" ><br>
+          <button type= "submit" value = "CreateAccount" name ="CreateButton"> Create Account</button>
+          <button type= "submit" value = "Login" name="LoginButton"> Login</button>
+
+
+
           </form>
           <form action="/01NewLogon.php">
             New Account?<br>
