@@ -16,7 +16,7 @@
       </div>
 
     <div class = "divcontainer">
-        <div class = "signup">
+        <div class = "form">
             <h3>Please Sign In:</h3>
             <form action="/01LogonPage.php">
               Users Logon Here:<br>
