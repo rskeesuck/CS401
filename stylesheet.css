@@ -173,11 +173,6 @@ color: #1d262c;
   padding-bottom: 50px;
 }
 
-#footerdiv{
-  text-align: center;
-  padding-top: 50px;
-}
-
 #footer ul {
     list-style-type: none;
     margin: 0;
@@ -203,4 +198,9 @@ color: #1d262c;
 #footer li a:hover {
     background-color: #557A95;
     color: white;
+}
+
+#footerdiv{
+  text-align: center;
+  padding-top: 50px;
 }
