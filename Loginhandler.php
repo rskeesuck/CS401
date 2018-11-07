@@ -22,16 +22,17 @@
 	//	$_SESSION['messages'][] = "Password must have at least one number and one uppercase letter.";
 //		$bad=true;
 //	}
-	if($bad){
-    header('Location: 01LogonPage.php');
-    $_SESSION['validated'] = 'bad';
-		exit;
-	}
+
 
 	require_once 'Dao.php';
 	$dao = new DAO();
 
 	if(isset($_POST['CreateButton'])){
+		if($bad){
+			header('Location: 01NewLogon.php');
+			$_SESSION['validated'] = 'bad';
+			exit;
+		}
 		$user=$dao->getUsername($username);
 		if(empty($user)){
 			$dao->addUser($username, $password);
@@ -45,6 +46,11 @@
 			exit;
 		}
 	}else if (isset($_POST['LoginButton'])){
+		if($bad){
+	    header('Location: 01LogonPage.php');
+	    $_SESSION['validated'] = 'bad';
+			exit;
+		}
 		$login=$dao->getUserPassword($username, $password);
 		if($login){
 			$_SESSION['logged_in']=true;
