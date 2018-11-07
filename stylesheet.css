@@ -75,6 +75,7 @@ span{
 }
 
 #navigation{
+  outline: #7395AE solid 2px;
   clear:left;
 }
 
@@ -108,7 +109,6 @@ span{
 #navigation #currentpage a {
 background: #d3d3d3;
 color: #1d262c;
-outline: #7395AE solid 1px;
 }
 
 .signup {
