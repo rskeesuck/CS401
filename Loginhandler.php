@@ -2,8 +2,8 @@
 	session_start();
 	$username = $_POST['username'];
 	$password = $_POST['password'];
-  $firstname = $_POST['firstname'];
-  $lastname = $_POST['lastname'];
+  //$firstname = $_POST['firstname'];
+  //$lastname = $_POST['lastname'];
 
 	$messages = array();
 	$bad = false;
@@ -17,6 +17,15 @@
 		$_SESSION['messages'][] = "Password is Required";
 		$bad = true;
 	}
+  //if(empty($firstname)){
+	//	$_SESSION['messages'][] = "First Name is Required";
+//		$bad = true;
+//	}
+//  if(empty($lastname)){
+//    $_SESSION['messages'][] = "Last Name is Required";
+//    $bad = true;
+//  }
+
 	if (!preg_match('~[1-9]~', $password)||!preg_match('~[A-Z]~', $password)) {
 		$_SESSION['messages'][] = "Password must have at least one number and one uppercase letter.";
 		$bad=true;
@@ -31,7 +40,7 @@
 	if(isset($_POST['CreateButton'])){
 		$user=$dao->getUsername($username);
 		if(empty($user)){
-			$dao->addUser($username, $password, $firstname, $lastname);
+			$dao->addUser($username, $password);
 			$_SESSION['logged_in']=true;
 			header('Location: 02UserHome.php');
 			exit;
