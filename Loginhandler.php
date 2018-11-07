@@ -25,7 +25,7 @@
 
 
 	require_once 'Dao.php';
-	$dao = new DAO();
+	$dao = new Dao();
 	echo "here";
 
 	if(isset($_POST['CreateButton'])){

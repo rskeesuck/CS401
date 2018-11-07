@@ -32,7 +32,7 @@
             <input type="text" placeholder = "password here" name="password"><br>
             <br>
             Submit:<br>
-            <button type="submit" value="Login" name="LoginButton">Login</button>
+            <button type="submit" value="LoginButton" name="LoginButton">Login</button>
             <br>
             <br>
           </form>
