@@ -21,13 +21,13 @@
             <input type="text" name="password"><br>
             <br>
             Submit:<br>
-            <input type="submit" value="LoginButton">
+            <input type="LoginButton" value="Login Button">
             <br>
             <br>
           </form>
           <form action="/01NewLogon.php">
             New Account?<br>
-            <input type="submit" value="Submit">
+            <input type="NewAccount" value="New Account">
           </form>
 
         </div>
