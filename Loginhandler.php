@@ -31,7 +31,8 @@
 		$bad=true;
 	}
 	if($bad){
-		header('Location: 01LogonPage.php');
+    echo "what the hell?";
+    header('Location: 01LogonPage.php');
 		exit;
 	}
 	require_once 'Dao.php';
