@@ -16,9 +16,11 @@
         ?>
 
       <div class="divcontainer">
-        <?php if(!empty($message)) { ?>
-          <div class="message"><?php echo $message; ?></div>
+
+        <?php if(!empty($messages)) { ?>
+          <div class="message"><?php echo $messages; ?></div>
         <?php } ?>
+
         <div class = "form">
           <h3>Please Sign In:</h3>
           <form action="/Loginhandler.php">
