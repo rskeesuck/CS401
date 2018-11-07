@@ -7,7 +7,10 @@ $password = $_POST['password'];
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
 
-//echo "what the hell";
+echo $username;
+echo $password;
+echo $firstname;
+echo $lastname;
 
 $_SESSION['presets']['username'] = $username;
 
