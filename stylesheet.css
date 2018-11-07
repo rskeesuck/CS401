@@ -74,21 +74,27 @@ span{
   line-height: 10px;
 }
 
+#navigation{
+  clear:left;
+}
+
+
+
 .navbar{
   clear: left;
 }
-ul {
+#navigation ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #1d262c;
 }
-li {
+#navigation li {
     float: left;
 }
 
-li a {
+#navigation li a {
     display: block;
     color: #7395AE;
     text-align: center;
@@ -99,9 +105,15 @@ li a {
     font-family: "Trebuchet", Trebuchet, sans-serif;
 }
 
-li a:hover {
+#navigation li a:hover {
     background-color: #557A95;
     color: white;
+}
+
+#navigation #currentpage a {
+/*background: #d3d3d3;*/
+background: red;
+color: #1d262c;
 }
 
 .signup {
