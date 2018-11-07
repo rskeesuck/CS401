@@ -20,12 +20,14 @@
             <h3>Please Sign In:</h3>
             <form action="/01LogonPage.php">
               Users Logon Here:<br>
+              <br>
               <button type="submit" value="GoToLogon" name="GoToLogon">Login Page</button>
               <br>
               <br>
             </form>
             <form action="/01NewLogon.php">
               New to SchoolBROS?<br>
+              <br>
               <button type="submit" value="NewAccount" name="NewAccountButton"> Set Up New Account</button>
             </form>
         </div>
