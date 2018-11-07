@@ -23,7 +23,7 @@
 //		$bad=true;
 //	}
 	if($bad){
-    header('Location: 08Secret.php');
+    header('Location: 01LogonPage.php');
     $_SESSION['validated'] = 'bad';
 		exit;
 	}
