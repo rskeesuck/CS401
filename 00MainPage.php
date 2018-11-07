@@ -14,10 +14,20 @@
       <div class = "photo">
           <img src="TeacherMAIN01.png" alt= "Teacher writing on board" width="100%">
       </div>
+
     <div class = "divcontainer">
         <div class = "signup">
-            <a href="01LogonPage.php">Sign In</a>
-            <br>
+            <h3>Please Sign In:</h3>
+            <form action="/01LogonPage.php">
+              Users Logon Here:<br>
+              <button type="submit" value="GoToLogon" name="GoToLogon">Login Page</button>
+              <br>
+              <br>
+            </form>
+            <form action="/01NewLogon.php">
+              New to SchoolBROS?<br>
+              <button type="submit" value="NewAccount" name="NewAccountButton"> Set Up New Account</button>
+            </form>
         </div>
         <br>
     </div>
