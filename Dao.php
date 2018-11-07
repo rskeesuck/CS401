@@ -1,27 +1,33 @@
 
   <?php
+require_once 'KLogger.php';
+
 class Dao{
   private $host = "us-cdbr-iron-east-01.cleardb.net";
   private $db = "heroku_470e46bcfd224d6";
   private $user = "b6654bc7a1a313";
   private $pass = "bf0523a8";
-
+  private $log;
   public function __construct(){
+    $this ->log = new KLogger("log.txt", KLogger::INFO);
   	}
 
   public function getConnection () {
-    return new PDO("mysql:host=us-cdbr-iron-east-01.cleardb.net;dbname=heroku_470e46bcfd224d6", "b6654bc7a1a313",
-          "bf0523a8");
+    $conn= new PDO("mysql:host={$this->host};dbname={$this->db}", $this->user,
+          $this->pass);
+    return $conn;
 }
+
 public function addUser($username, $password){
-			$conn=$this->getConnection();
+      $this->log->LogInfo("Save comment [{$name}][{$comment}]");
+      $conn=$this->getConnection();
 			$saveQuery = $conn->prepare(
 				"INSERT INTO accounts (username, password) VALUES (:username, :password)");
 			$saveQuery->bindParam(":username", $username);
 			$saveQuery->bindParam(":passwords", $password);
       $saveQuery->execute();
-
   }
+
   public function getUsername($username){
   		$conn=$this->getConnection();
       $stmt = $conn->prepare("SELECT username FROM accounts WHERE username = :username");
@@ -29,6 +35,7 @@ public function addUser($username, $password){
       $stmt->execute();
   		return $stmt->fetch();
 }
+
   public function getUserPassword($username, $password){
 		$conn=$this->getConnection();
 		$q=$conn->prepare("SELECT username FROM accounts WHERE username=:username AND password=:password");
@@ -39,22 +46,13 @@ public function addUser($username, $password){
 		$result=$q->fetchAll();
 		return $result;
 	}
-  //public function saveDestination($city, $country, $state){
-			//$conn=$this->getConnection();
-			//$saveQuery=
-			//	"INSERT INTO destinations_input (city, country, state) VALUES (:city, :country, :state)";
-			//$q=$conn->prepare($saveQuery);
-		//	$q->bindParam(":city", $city);
-		//	$q->bindParam(":country", $country);
-		//	$q->bindParam(":state", $state);
-	//		$q->execute();
-	}
 
-  	public function deleteUser($username, $password){
-  	}
+  //	public function deleteUser($username, $password){
+  //	}
+
     public function validateUser($username, $password){
       $conn=$this->getConnection();
-      $stmt = $conn->prepare("SELECT * FROM users WHERE username = :username");
+      $stmt = $conn->prepare("SELECT * FROM accounts WHERE username = :username");
       $stmt->bindparam(":username", $username);
       $stmt->execute();
       $user = $stmt->fetch();

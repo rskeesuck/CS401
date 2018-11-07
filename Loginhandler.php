@@ -4,10 +4,12 @@
 	$password = $_POST['password'];
 
 	$messages = array();
+  $presets = array();
 	$bad = false;
 
-	$_SESSION['presets']['username'] = $username;
-	if(empty($username)){
+	//$_SESSION['presets']['username'] = $username;
+
+  if(empty($username)){
 		$_SESSION['messages'][] = "Username is Required";
 		$bad = true;
 	}
@@ -16,14 +18,16 @@
 		$bad = true;
 	}
 
-	if (!preg_match('~[1-9]~', $password)||!preg_match('~[A-Z]~', $password)) {
-		$_SESSION['messages'][] = "Password must have at least one number and one uppercase letter.";
-		$bad=true;
-	}
+//	if (!preg_match('~[1-9]~', $password)||!preg_match('~[A-Z]~', $password)) {
+	//	$_SESSION['messages'][] = "Password must have at least one number and one uppercase letter.";
+//		$bad=true;
+//	}
 	if($bad){
     header('Location: index.php');
+    $_SESSION['validated'] = 'bad';
 		exit;
 	}
+  
 	require_once 'Dao.php';
 	$dao = new DAO();
 
