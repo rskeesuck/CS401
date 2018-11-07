@@ -22,7 +22,7 @@
 		$bad=true;
 	}
 	if($bad){
-		header('Location: index.php');
+		header('Location: 01LogonPage.php');
 		exit;
 	}
 	require_once 'Dao.php';
