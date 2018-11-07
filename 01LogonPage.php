@@ -12,7 +12,7 @@
       <div class="divcontainer">
         <div class = "form">
           <h3>Please Sign In:</h3>
-          <form action="/signInHandler.php">
+          <form action="/Loginhandler.php">
             Username:<br>
             <input type="text" name="username"><br>
             <br>
@@ -23,24 +23,7 @@
             <input type="submit" value="Submit">
             <br>
           </form>
-          <h3>New Account?  Sign in Here:</h3>
-          <form action="/newAccountHandler.php">
-            Username: (user email address: jsmith@example.com)<br>
-            <input type="text" name="username"><br>
-            <br>
-            Password: (must contain one letter and one number)<br>
-            <input type="text" name="password"><br>
-            <br>
-            First Name:<br>
-            <input type="text" name="firstname"><br>
-            <br>
-            Last Name:<br>
-            <input type="text" name="lastname"><br>
-            <br>
-            Submit:<br>
-            <input type="submit" value="Submit">
-            <br>
-          </form>
+
         </div>
         <br>
         <div class = "photos">
