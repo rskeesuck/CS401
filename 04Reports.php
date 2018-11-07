@@ -1,5 +1,11 @@
 <!DOCTYPE html>
-<?php session_start(); ?>
+<?php $thisPage = "04Reports"; ?>
+<?php
+if (!isset($_SESSION['logged_in']) || !$_SESSION['logged_in']) {
+		header('Location: 04Reports.php');
+		exit;
+  }
+  ?>
 <html>
     <head>
       <?php include_once "head.php"; ?>

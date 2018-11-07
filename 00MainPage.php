@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <?php session_start(); ?>
+<?php $thisPage = "00MainPage"; ?>
 <html>
     <head>
       <?php include_once "head.php"; ?>

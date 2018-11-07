@@ -31,7 +31,7 @@
 		$bad=true;
 	}
 	if($bad){
-    echo "what the hell?";
+    //echo "what the hell?";
     header('Location: 01LogonPage.php');
 		exit;
 	}

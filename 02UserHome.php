@@ -1,9 +1,11 @@
 <!DOCTYPE html>
+<?php $thisPage = "02UserHome"; ?>
 <?php
-session_start();
-$message = isset($_SESSION['message']) ? $_SESSION['message'] : '';
-unset($_SESSION['message']);
-?>
+if (!isset($_SESSION['logged_in']) || !$_SESSION['logged_in']) {
+		header('Location: 02UserHome.php');
+		exit;
+  }
+  ?>
 
 <html>
     <head>

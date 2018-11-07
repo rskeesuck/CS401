@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php session_start(); ?>
+<?php $thisPage = "06Help"; ?>
 <html>
     <head>
       <?php include_once "head.php"; ?>

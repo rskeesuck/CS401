@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<?php session_start(); ?>
+<?php $thisPage = "01NewLogon"; ?>
 <html>
     <head>
       <?php include_once "head.php"; ?>
