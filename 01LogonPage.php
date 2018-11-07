@@ -23,6 +23,10 @@
             <input type="submit" value="Submit">
             <br>
           </form>
+          <form action="/01NewLogon.php">
+            New Account?<br>
+            <input type="submit" value="Submit">
+          </form>
 
         </div>
         <br>

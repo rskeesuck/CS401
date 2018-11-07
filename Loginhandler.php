@@ -1,9 +1,11 @@
 <?php
-//echo "here";
+
 session_start();
-//header('Location: index.php');
+
 $username = $_POST['username'];
 $password = $_POST['password'];
+$firstname = $_POST['firstname'];
+$lastname = $_POST['lastname'];
 
 $_SESSION['presets']['username'] = $username;
 
@@ -31,7 +33,7 @@ if (isset($_POST['NewAccount'])) {
 		if(empty($user)){
 			$dao->addUser($username, $password);
       echo "here";
-			header('Location: Home.php');
+			header('Location: 01NewLogon.php');
 			exit;
 		}else{
 			$_SESSION['messages'][]= "That username already exists";

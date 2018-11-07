@@ -14,7 +14,7 @@ class Dao{
 public function addUser($username, $password){
 			$conn=$this->getConnection();
 			$saveQuery = $conn->prepare(
-				"INSERT INTO users (username, password) VALUES (:username, :password)");
+				"INSERT INTO accounts (username, passwords) VALUES (:username, :password)");
 			$saveQuery->bindParam(":username", $username);
 			$saveQuery->bindParam(":password", $password);
       $saveQuery->execute();
@@ -22,30 +22,30 @@ public function addUser($username, $password){
   }
   public function getUsername($username){
   		$conn=$this->getConnection();
-      $stmt = $conn->prepare("SELECT username FROM users WHERE username = :username");
+      $stmt = $conn->prepare("SELECT username FROM accounts WHERE username = :username");
       $stmt->bindparam(":username", $username);
       $stmt->execute();
   		return $stmt->fetch();
 }
   public function getUserPassword($username, $password){
 		$conn=$this->getConnection();
-		$q=$conn->prepare("SELECT username FROM users WHERE username=:username AND password=:password");
+		$q=$conn->prepare("SELECT username FROM users WHERE username=:username AND passwords=:password");
 		$q->bindParam(":username", $username);
-		$q->bindParam(":password", $password);
+		$q->bindParam(":passwords", $password);
 		$q->setFetchMode(PDO::FETCH_ASSOC);
 		$q->execute();
 		$result=$q->fetchAll();
 		return $result;
 	}
-  public function saveDestination($city, $country, $state){
-			$conn=$this->getConnection();
-			$saveQuery=
-				"INSERT INTO destinations_input (city, country, state) VALUES (:city, :country, :state)";
-			$q=$conn->prepare($saveQuery);
-			$q->bindParam(":city", $city);
-			$q->bindParam(":country", $country);
-			$q->bindParam(":state", $state);
-			$q->execute();
+  //public function saveDestination($city, $country, $state){
+			//$conn=$this->getConnection();
+			//$saveQuery=
+			//	"INSERT INTO destinations_input (city, country, state) VALUES (:city, :country, :state)";
+			//$q=$conn->prepare($saveQuery);
+		//	$q->bindParam(":city", $city);
+		//	$q->bindParam(":country", $country);
+		//	$q->bindParam(":state", $state);
+	//		$q->execute();
 	}
 
   	public function deleteUser($username, $password){
