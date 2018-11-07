@@ -23,11 +23,11 @@
 //		$bad=true;
 //	}
 	if($bad){
-    header('Location: index.php');
+    header('Location: 08Secret.php');
     $_SESSION['validated'] = 'bad';
 		exit;
 	}
-  
+
 	require_once 'Dao.php';
 	$dao = new DAO();
 
