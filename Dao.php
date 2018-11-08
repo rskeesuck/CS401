@@ -19,12 +19,12 @@ class Dao{
 }
 
 public function addUser($username, $password){
-      $this->log->LogInfo("Save comment [{$name}][{$comment}]");
+      //$this->log->LogInfo("Save comment [{$name}][{$comment}]");
       $conn=$this->getConnection();
 			$saveQuery = $conn->prepare(
 				"INSERT INTO accounts (username, password) VALUES (:username, :password)");
 			$saveQuery->bindParam(":username", $username);
-			$saveQuery->bindParam(":passwords", $password);
+			$saveQuery->bindParam(":password", $password);
       $saveQuery->execute();
   }
 
