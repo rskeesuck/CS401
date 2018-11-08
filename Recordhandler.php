@@ -14,8 +14,8 @@
 
 	$dao = new Dao();
   //echo "check";
-  echo ($student_first . " " . $student_last);
-  echo ($student_gender . " " . $student_grade);
+  //echo ($student_first . " " . $student_last);
+  //echo ($student_gender . " " . $student_grade);
 
   if(isset($_POST['Submit'])){
 
@@ -33,6 +33,14 @@
       header('Location: 03Record.php');
       exit;
     }
+    $user=$dao->addStudent($student_first,$student_last,$student_gender,$student_grade);
+		if(empty($user)){
+			$dao->addStudent($student_first,$student_last,$student_gender,$student_grade);
+			//$_SESSION['logged_in']=true;
+			header('Location: 02UserHome.php');
+			exit;
+      
+		}
   }
 
   ?>
