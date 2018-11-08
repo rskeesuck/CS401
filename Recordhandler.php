@@ -13,9 +13,10 @@
 	$bad = false;
 
 	$dao = new Dao();
-  echo "check";
   echo $student_first;
-  
+  echo "check";
+
+
   if(isset($_POST['submit'])){
 
     if(empty($student_first)){
