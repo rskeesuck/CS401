@@ -4,7 +4,6 @@
 <?php
   session_start();
     $message = isset($_SESSION['message']) ? $_SESSION['message'] : '';
-    unset($_SESSION['message']);
 ?>
 <html>
     <head>
@@ -19,8 +18,10 @@
       <div class="divcontainer">
 
         <?php if(!empty($messages)) { ?>
-          <div class="message"><?php echo $messages; ?></div>
-        <?php } ?>
+          <div class="message"><?php echo here.$messages; ?></div>
+        <?php
+             unset($_SESSION['message']);
+        } ?>
 
         <div class = "form">
           <h3>Please Sign In:</h3>

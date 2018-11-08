@@ -31,8 +31,8 @@ echo $username;
 	if(isset($_POST['CreateButton'])){
 		echo "here";
 		if($bad){
-			header('Location: 01NewLogon.php');
 			$_SESSION['validated'] = 'bad';
+			header('Location: 01NewLogon.php');
 			exit;
 		}
 		$user=$dao->getUsername($username);
