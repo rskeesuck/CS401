@@ -18,9 +18,9 @@ if (empty($_SESSION['logged_in'])) {
         ?>
 				<?php require_once "Dao.php";
 					$dao = new Dao();
-					$student = $dao->getStudent();
+					$students = $dao->getStudent();
 
-?>
+					?>
     <div class = "divcontainer">
       <h4>Create an Individual Student Report</h4>
 
@@ -40,12 +40,9 @@ if (empty($_SESSION['logged_in'])) {
           				</td>
         			</tr>";
         }
-    ?>
-  </table>
-      <br>
-
-
-
+    			?>
+  				</table>
+      	<br>
 
     </div>
       <div class = "photo">
