@@ -15,6 +15,7 @@
 	$dao = new Dao();
 
   if(isset($_POST['submit'])){
+
     if(empty($student_first)){
       $_SESSION['messages'] = "Student first name is required.";
       $bad = true;
@@ -29,6 +30,6 @@
       header('Location: 03Record.php');
       exit;
     }
-
+  }
 
   ?>
