@@ -18,16 +18,22 @@ if (empty($_SESSION['logged_in'])) {
        include_once "header.php";
         ?>
     <div class = "divcontainer">
-
-      <div class = "signup">
-          <a href="03Record.php">Record Incident</a>
-            <br>
-      </div>
-      <br>
-      <div class = "signup">
-          <a href="04Reports.php">Student Report</a>
-      </div>
-    </div>
+			<div class = "form" class = "mainlog">
+					<h3>Record Incident with Student(s):</h3>
+					<form action="/03Record.php">
+						Record Here:<br>
+						<br>
+						<button type="submit" value="GoToRecord" name="RecordButton">Record Incident</button>
+						<br>
+						<br>
+					</form>
+					<form action="/04Reports.php">
+						Individual Student Report:<br>
+						<br>
+						<button type="submit" value="GoToReport" name="ReportButton"> Student Report</button>
+					</form>
+			</div>
+      
       <br>
       <div class = "photo">
         <img src="Pencils.jpg" alt= "Pencils" width =50% class="center">

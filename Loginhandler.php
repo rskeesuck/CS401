@@ -10,22 +10,6 @@
 
 	$bad = false;
 
-
-  //if(empty($username)){
-	//	$_SESSION['messages'] = "Username is Required";
-	//	$bad = true;
-	//}
-	//if(empty($password)){
-	//	$_SESSION['messages'] = "Password is Required";
-	//	$bad = true;
-	//}
-	//if(1!=preg_match('~[1-9]~', $password)||1!=preg_match('~[A-Z]~', $password)){
-	//	$_SESSION['messages']="Password must contain a capital letter and a number.";
-	//	$bad = true;
-	//}
-
-
-
 	$dao = new Dao();
 
 	if(isset($_POST['CreateButton'])){

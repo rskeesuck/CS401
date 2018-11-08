@@ -30,10 +30,10 @@
           <div class = "form">
             <h3>New Account?  Sign in Here:</h3>
               <form action="/Loginhandler.php" method = "POST">
-                Username: (user email address: jsmith@example.com)<br>
-                <input type="text" placeholder = "ex: jsmith@example.com" name="username"><br>
+                Username:<br>
+                <input type="text" placeholder = "Username" name="username"><br>
                 <br>
-                Password: (must contain one letter and one number)<br>
+                Password: (must contain at least one capital letter and number)<br>
                 <input type="text" placeholder = "password here" name="password"><br>
                 <br>
                 Submit:<br>
