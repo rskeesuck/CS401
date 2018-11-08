@@ -75,16 +75,11 @@ public function addUser($username, $password){
       $saveQuery->execute();
     }
 
-    public function getStudent($student_first, $student_last){
-    		$conn=$this->getConnection();
-        $q = $conn->prepare("SELECT student_first, student_last FROM student_records WHERE (student_first = :student_first, student_last = :student_last");
-        $q->bindParam(":student_first", $student_first);
-        $q->bindparam(":student_last", $student_last);
+    public function getStudent(){
+      $conn=$this->getConnection();
+        $q=$conn->prepare("SELECT student_first, student_last, gender, grade from student_records");
         $q->setFetchMode(PDO::FETCH_ASSOC);
-    		$q->execute();
-    		$result=$q->fetchAll();
-    		return $result;
-  }
-
-}
+        $q->execute();
+        $result=$q->fetchAll();
+        return $result;
 ?>

@@ -16,8 +16,32 @@ if (empty($_SESSION['logged_in'])) {
        include_once "loggedin_navbar.php";
        include_once "header.php";
         ?>
+				<?php require_once "Dao.php";
+					$dao = new Dao();
+					$student = $dao->getStudent();
+
+?>
     <div class = "divcontainer">
       <h4>Create an Individual Student Report</h4>
+
+			<table>
+
+    		<?php
+      		foreach ($students as $student)
+        {
+          echo "<tr>
+                  <td>
+                      First Name: " . htmlentities($student['student_first']) . "<br>
+                      Last Name: " . htmlentities($student['student_last']) . "<br>
+                      Gender: " . htmlentities($student['gender']) . "<br>
+											Grade: " . htmlentities($student['grade']) . "<br>
+											<br>
+                      <hr>
+          				</td>
+        			</tr>";
+        }
+    ?>
+  </table>
       <br>
 
 
