@@ -7,7 +7,7 @@
     </head>
     <body>
       <?php
-      if(!empty($_SESSION("logged_in"))){
+      if(!empty($_SESSION["logged_in"])){
         include "loggedin_navbar.php";
       }else{
         include "navbar.php";
