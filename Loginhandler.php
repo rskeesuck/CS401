@@ -11,29 +11,38 @@
 	$bad = false;
 
 
-  if(empty($username)){
-		$_SESSION['messages'] = "Username is Required";
-		$bad = true;
-	}
-	if(empty($password)){
-		$_SESSION['messages'] = "Password is Required";
-		$bad = true;
-	}
-//	if(1!=preg_match('~[1-9]~', $password)||1!=preg_match('~[A-Z]~', $password)){
-//		$_SESSION['messages']="Password must contain a capital letter and a number.";
-//		$bad = true;
-//	}
+  //if(empty($username)){
+	//	$_SESSION['messages'] = "Username is Required";
+	//	$bad = true;
+	//}
+	//if(empty($password)){
+	//	$_SESSION['messages'] = "Password is Required";
+	//	$bad = true;
+	//}
+	//if(1!=preg_match('~[1-9]~', $password)||1!=preg_match('~[A-Z]~', $password)){
+	//	$_SESSION['messages']="Password must contain a capital letter and a number.";
+	//	$bad = true;
+	//}
 
 
 
 	$dao = new Dao();
 
 	if(isset($_POST['CreateButton'])){
+		if(empty($username)){
+			$_SESSION['messages'] = "Username is Required";
+			$bad = true;
+		}
+		if(empty($password)){
+			$_SESSION['messages'] = "Password is Required";
+			$bad = true;
+		}
+		if(1!=preg_match('~[1-9]~', $password)||1!=preg_match('~[A-Z]~', $password)){
+			$_SESSION['messages']="Password must contain a capital letter and a number.";
+			$bad = true;
+		}
+
 		if($bad){
-			if(1!=preg_match('~[1-9]~', $password)||1!=preg_match('~[A-Z]~', $password)){
-				$_SESSION['messages']="Password must contain a capital letter and a number.";
-				$bad = true;
-			}
 			$_SESSION['validated'] = 'bad';
 			header('Location: 01NewLogon.php');
 			exit;
@@ -51,7 +60,18 @@
 			exit;
 		}
 	}else if (isset($_POST['LoginButton'])){
-
+		if(empty($username)){
+			$_SESSION['messages'] = "Username is Required";
+			$bad = true;
+		}
+		if(empty($password)){
+			$_SESSION['messages'] = "Password is Required";
+			$bad = true;
+		}
+		if(1!=preg_match('~[1-9]~', $password)||1!=preg_match('~[A-Z]~', $password)){
+			$_SESSION['messages']="Incorrect Username or Password";
+			$bad = true;
+		}
 		if($bad){
 	    header('Location: 01LogonPage.php');
 	    $_SESSION['validated'] = 'bad';
