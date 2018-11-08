@@ -3,8 +3,7 @@
 
 <?php
   session_start();
-    $message = isset($_SESSION['message']) ? $_SESSION['message'] : '';
-    unset($_SESSION['message']);
+    $message = $_SESSION['messages'];
 ?>
 <html>
     <head>
@@ -18,9 +17,11 @@
 
         <div class = "divcontainer">
 
-          <?php if(!empty($messages)) { ?>
-            <div class="message"><?php echo $messages; ?></div>
-          <?php } ?>
+          <?php if(!empty($message)) { ?>
+            <div class="message"><?php echo $message; ?></div>
+          <?php
+          unset($_SESSION['messages']);
+          } ?>
 
           <div class = "form">
             <h3>New Account?  Sign in Here:</h3>
