@@ -24,7 +24,7 @@
 
           <div class = "form">
             <h3>New Account?  Sign in Here:</h3>
-              <form action="/Loginhandler.php">
+              <form action="/Loginhandler.php" method = "POST">
                 Username: (user email address: jsmith@example.com)<br>
                 <input type="text" placeholder = "ex: jsmith@example.com" name="username"><br>
                 <br>
