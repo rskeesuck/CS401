@@ -14,23 +14,21 @@
 
 	$dao = new Dao();
   //echo "check";
-  echo ($student_first . "" . $student_last);
+  echo ($student_first . " " . $student_last);
 
   if(isset($_POST['Submit'])){
 
     if(empty($student_first)){
-      //echo $student_first;
       $_SESSION['messages'] = "Student first name is required.";
       $bad = true;
     }
     if(empty($student_last)){
-      //echo $student_last;
       $_SESSION['messages'] = "Student last name is required.";
-      //echo "check";
       $bad = true;
     }
 
     if($bad){
+      echo "check";
       $_SESSION['validated'] = 'bad';
       header('Location: 03Record.php');
       exit;
