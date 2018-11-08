@@ -18,11 +18,11 @@ if (empty($_SESSION['logged_in'])) {
         ?>
     <div class = "divcontainer">
 
-			<?php if(!empty($message)) { ?>
-				<div class="message"><?php echo $message; ?></div>
-			<?php
-					 unset($_SESSION['messages']);
-			} ?>
+				<?php if(!empty($message)) { ?>
+					<div class="message"><?php echo $message; ?></div>
+					<?php
+					 	unset($_SESSION['messages']);
+					} ?>
 
 			<form action="/02UserHome.php">
 				Back to "My Students":<br>

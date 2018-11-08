@@ -47,9 +47,6 @@ public function addUser($username, $password){
 		return $result;
 	}
 
-  //	public function deleteUser($username, $password){
-  //	}
-
     public function validateUser($username, $password){
       $conn=$this->getConnection();
       $stmt = $conn->prepare("SELECT * FROM accounts WHERE username = :username");
@@ -65,5 +62,29 @@ public function addUser($username, $password){
       }
       return false;
     }
+
+    public function addStudent($student_first, $student_last, $student_gender, $student_grade){
+      $conn=$this->getConnection();
+			$saveQuery = $conn->prepare(
+				"INSERT INTO reports (student_first, student_last, student_gender, student_grade) VALUES (:student_first, :student_last, :student_gender, :student_grade)");
+			$saveQuery->bindParam(":student_first", $student_first);
+			$saveQuery->bindParam(":student_last", $student_last);
+      $saveQuery->bindParam(":student_gender", $student_gender);
+      $saveQuery->bindParam(":student_grade", $student_grade);
+
+      $saveQuery->execute();
+    }
+
+    public function getStudent($student_first, $student_last){
+    		$conn=$this->getConnection();
+        $q = $conn->prepare("SELECT student_first, student_last FROM reports WHERE (student_first = :student_first, student_last = :student_last");
+        $q->bindParam(":student_first", $student_first);
+        $q->bindparam(":student_last", $student_last);
+        $q->setFetchMode(PDO::FETCH_ASSOC);
+    		$q->execute();
+    		$result=$q->fetchAll();
+    		return $result;
+  }
+
 }
 ?>
