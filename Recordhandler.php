@@ -13,11 +13,10 @@
 	$bad = false;
 
 	$dao = new Dao();
-  echo $student_first;
   echo "check";
 
 
-  if(isset($_POST['submit'])){
+  if(isset($_POST['Submit'])){
 
     if(empty($student_first)){
       $_SESSION['messages'] = "Student first name is required.";

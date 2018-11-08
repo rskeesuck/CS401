@@ -135,7 +135,7 @@ if (empty($_SESSION['logged_in'])) {
         <input type="checkbox" name="action8" value="Sent to Office (ODR)"> Sent to Office (ODR)<br>
         <br>
         <h3>All done?  Submit your report here.</h3>
-        <input type="submit" value="submit">
+        <button type="submit" value="submitreport" name="Submit"> Submit Incident</button>
         <input type="reset" value="reset">
       </form>
         <br>
