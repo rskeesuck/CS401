@@ -37,6 +37,5 @@
 		}
     header('Location: 02UserHome.php');
     exit;
-  }
 
   ?>
