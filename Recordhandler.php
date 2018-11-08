@@ -13,8 +13,8 @@
 	$bad = false;
 
 	$dao = new Dao();
-  echo "check";
-
+  //echo "check";
+  echo ($student_first . "" . $student_last);
 
   if(isset($_POST['Submit'])){
 
