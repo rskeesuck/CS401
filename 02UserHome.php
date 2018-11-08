@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <?php $thisPage = "02UserHome"; ?>
 <?php
+session_start();
 if (empty($_SESSION['logged_in']) {
 		header('Location: 01LogoPage.php');
 		exit;
