@@ -66,7 +66,7 @@ public function addUser($username, $password){
     public function addStudent($student_first, $student_last, $student_gender, $student_grade){
       $conn=$this->getConnection();
 			$saveQuery = $conn->prepare(
-				"INSERT INTO student_records (student_first, student_last, student_gender, student_grade) VALUES (:student_first, :student_last, :student_gender, :student_grade)");
+				"INSERT INTO student_records (student_first, student_last, gender, grade) VALUES (:student_first, :student_last, :student_gender, :student_grade)");
 			$saveQuery->bindParam(":student_first", $student_first);
 			$saveQuery->bindParam(":student_last", $student_last);
       $saveQuery->bindParam(":student_gender", $student_gender);
