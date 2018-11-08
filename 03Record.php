@@ -17,9 +17,22 @@ if (empty($_SESSION['logged_in'])) {
        include_once "header.php";
         ?>
     <div class = "divcontainer">
+
+			<?php if(!empty($message)) { ?>
+				<div class="message"><?php echo $message; ?></div>
+			<?php
+					 unset($_SESSION['messages']);
+			} ?>
+
+			<form action="/02UserHome.php">
+				Back to "My Students":<br>
+				<br>
+				<button type="submit" value="GoToMyStudents" name="MyStudentsButton"> Go Back to My Students</button>
+			</form>
+	</div>
     <div class = "form">
       <h3>Who was it?  Student Name (First, Last)</h3>
-      <form action="/action_page.php">
+      <form action="/Recordhandler.php">
         First Name of Student:<br>
         <input type="text" name="firstname"><br>
         Last Name of Student:<br>
@@ -122,8 +135,8 @@ if (empty($_SESSION['logged_in'])) {
         <input type="checkbox" name="action8" value="Sent to Office (ODR)"> Sent to Office (ODR)<br>
         <br>
         <h3>All done?  Submit your report here.</h3>
-        <input type="submit" value="Submit">
-        <input type="reset" value="Reset">
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
       </form>
         <br>
         <div>

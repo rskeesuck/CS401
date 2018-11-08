@@ -33,10 +33,10 @@ if (empty($_SESSION['logged_in'])) {
 						<button type="submit" value="GoToReport" name="ReportButton"> Student Report</button>
 					</form>
 			</div>
-      
+		</div>
       <br>
       <div class = "photo">
-        <img src="Pencils.jpg" alt= "Pencils" width =50% class="center">
+        <img src="Pencils.jpg" alt= "Pencils" width =75% class="center">
       </div>
 
       <?php include_once "footer.php"; ?>
