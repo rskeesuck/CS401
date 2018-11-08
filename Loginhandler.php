@@ -56,7 +56,7 @@ echo $username;
 			exit;
 		}
 		$login=$dao->getUserPassword($username, $password);
-		if($login){
+		if(empty($login)){
 			$_SESSION['logged_in']=true;
 			header('Location: 02UserHome.php');
 			exit;
