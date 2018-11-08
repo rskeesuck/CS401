@@ -42,7 +42,7 @@ echo $username;
 			header('Location: 02UserHome.php');
 			exit;
 		}else{
-			$_SESSION['messages'][]="That username already exists";
+			$_SESSION['messages']="That username already exists";
 			$_SESSION['logged_in']=false;
 			header('Location: 01NewLogon.php');
 			exit;
@@ -61,7 +61,7 @@ echo $username;
 			header('Location: 02UserHome.php');
 			exit;
 		}else{
-			$_SESSION['messages'][]="Username or Password is incorrect.";
+			$_SESSION['messages']="Username or Password is incorrect.";
 			$_SESSION['logged_in']=false;
 			header('Location: 01LogonPage.php');
 			exit;
