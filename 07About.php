@@ -11,9 +11,9 @@
       }else{
         include "navbar.php";
       }
-  
-       include_once "header.php";
+       include "header.php";
         ?>
+        
     <div class="divcontainer">
       <div>
         <h2>Who we are...</h2>
