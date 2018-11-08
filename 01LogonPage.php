@@ -24,7 +24,7 @@
 
         <div class = "form">
           <h3>Please Sign In:</h3>
-          <form action="/Loginhandler.php">
+          <form action="/Loginhandler.php" method = "POST">
            Username:<br>
             <input type="text" placeholder = "username here" name="username"><br>
             <br>
