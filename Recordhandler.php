@@ -16,31 +16,27 @@
   //echo "check";
   //echo ($student_first . " " . $student_last);
   //echo ($student_gender . " " . $student_grade);
+  if(empty($student_first)){
+    $_SESSION['messages'] = "Student first name is required.";
+    $bad = true;
+  }
+  if(empty($student_last)){
+    $_SESSION['messages'] = "Student last name is required.";
+    $bad = true;
+  }
+  if($bad){
+    $_SESSION['validated'] = 'bad';
+    header('Location: 03Record.php');
+    exit;
+  }
 
   if(isset($_POST['Submit'])){
+    $dao->addStudent($student_first,$student_last,$student_gender,$student_grade);
+    $_SESSION['messages'] = "Thank you for your submission!";
 
-    if(empty($student_first)){
-      $_SESSION['messages'] = "Student first name is required.";
-      $bad = true;
-    }
-    if(empty($student_last)){
-      $_SESSION['messages'] = "Student last name is required.";
-      $bad = true;
-    }
-
-    if($bad){
-      $_SESSION['validated'] = 'bad';
-      header('Location: 03Record.php');
-      exit;
-    }
-    $user=$dao->addStudent($student_first,$student_last,$student_gender,$student_grade);
-		if(empty($user)){
-			$dao->addStudent($student_first,$student_last,$student_gender,$student_grade);
-			//$_SESSION['logged_in']=true;
-			header('Location: 02UserHome.php');
-			exit;
-      
 		}
+    header('Location: 02UserHome.php');
+    exit;
   }
 
   ?>
