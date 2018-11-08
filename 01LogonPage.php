@@ -18,7 +18,7 @@
       <div class="divcontainer">
 
         <?php if(!empty($messages)) { ?>
-          <div class="message"><?php echo here.$messages; ?></div>
+          <div class="message"><?php echo "here"; ?></div>
         <?php
              unset($_SESSION['message']);
         } ?>
