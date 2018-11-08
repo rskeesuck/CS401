@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <?php $thisPage = "02UserHome"; ?>
 <?php
-if (!isset($_SESSION['logged_in']) {
-		header('Location: 02UserHome.php');
-		exit;
-  }
+//if (!isset($_SESSION['logged_in']) {
+	//	header('Location: 02UserHome.php');
+	//	exit;
+  //}
   ?>
 
 <html>
