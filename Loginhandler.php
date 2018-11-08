@@ -20,7 +20,7 @@
 		$bad = true;
 	}
 	if(1!=preg_match('~[1-9]~', $password)||1!=preg_match('~[A-Z]~', $password)){
-		$messages[]="PLEASE ENTER A PASSWORD WITH NUMBER AND CAPITAL LETTER";
+		$_SESSION['messages']="PLEASE ENTER A PASSWORD WITH NUMBER AND CAPITAL LETTER";
 		$bad = true;
 	}
 
