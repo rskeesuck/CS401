@@ -66,7 +66,7 @@ public function addUser($username, $password){
     public function addStudent($student_first, $student_last, $student_gender, $student_grade){
       $conn=$this->getConnection();
 			$saveQuery = $conn->prepare(
-				"INSERT INTO reports (student_first, student_last, student_gender, student_grade) VALUES (:student_first, :student_last, :student_gender, :student_grade)");
+				"INSERT INTO student_records (student_first, student_last, student_gender, student_grade) VALUES (:student_first, :student_last, :student_gender, :student_grade)");
 			$saveQuery->bindParam(":student_first", $student_first);
 			$saveQuery->bindParam(":student_last", $student_last);
       $saveQuery->bindParam(":student_gender", $student_gender);
@@ -77,7 +77,7 @@ public function addUser($username, $password){
 
     public function getStudent($student_first, $student_last){
     		$conn=$this->getConnection();
-        $q = $conn->prepare("SELECT student_first, student_last FROM reports WHERE (student_first = :student_first, student_last = :student_last");
+        $q = $conn->prepare("SELECT student_first, student_last FROM student_records WHERE (student_first = :student_first, student_last = :student_last");
         $q->bindParam(":student_first", $student_first);
         $q->bindparam(":student_last", $student_last);
         $q->setFetchMode(PDO::FETCH_ASSOC);
