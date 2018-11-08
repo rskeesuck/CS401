@@ -83,4 +83,4 @@ public function addUser($username, $password){
         $result=$q->fetchAll();
         return $result;
       }
-?>
+    }
