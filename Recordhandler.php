@@ -15,6 +15,7 @@
 	$dao = new Dao();
   //echo "check";
   echo ($student_first . " " . $student_last);
+  echo ($student_gender . " " . $student_grade);
 
   if(isset($_POST['Submit'])){
 
