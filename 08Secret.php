@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <?php $thisPage = "08Secret"; ?>
 <?php
-if (!isset($_SESSION['logged_in']) || !$_SESSION['logged_in']) {
-		header('Location: 08Secret.php');
+session_start();
+if (empty($_SESSION['logged_in'])) {
+		header('Location: 01LogonPage.php');
 		exit;
   }
   ?>
@@ -11,6 +12,7 @@ if (!isset($_SESSION['logged_in']) || !$_SESSION['logged_in']) {
       <?php include_once "head.php"; ?>
     </head>
     <body>
+			<?php include_once "loggedin_navbar.php"; ?>
     <div class="divcontainer">
       <h2>When coding has gone to your brain!</h2>
         <div class="photo">

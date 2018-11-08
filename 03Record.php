@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <?php $thisPage = "03Record"; ?>
 <?php
-if (!isset($_SESSION['logged_in']) || !$_SESSION['logged_in']) {
-		header('Location: 03Record.php');
+session_start();
+if (empty($_SESSION['logged_in'])) {
+		header('Location: 01LogonPage.php');
 		exit;
   }
   ?>
@@ -12,7 +13,7 @@ if (!isset($_SESSION['logged_in']) || !$_SESSION['logged_in']) {
     </head>
     <body>
       <?php
-       include_once "navbar.php";
+       include_once "loggedin_navbar.php";
        include_once "header.php";
         ?>
     <div class = "divcontainer">

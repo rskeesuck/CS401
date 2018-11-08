@@ -14,7 +14,7 @@ if (empty($_SESSION['logged_in'])) {
     </head>
     <body>
       <?php
-       include_once "navbar.php";
+       include_once "loggedin_navbar.php";
        include_once "header.php";
         ?>
     <div class = "divcontainer">

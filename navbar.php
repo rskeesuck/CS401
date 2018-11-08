@@ -13,9 +13,6 @@
         <li<?php if ($thisPage=="01LogonPage")
         echo " id=\"currentpage\""; ?>>
         <a href="01LogonPage.php">Logon</a></li>
-        <li<?php if ($thisPage=="02UserHome")
-        echo " id=\"currentpage\""; ?>>
-        <a href="02UserHome.php">My Students</a></li>
       </ul>
     </div>
 </html>
