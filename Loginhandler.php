@@ -1,13 +1,15 @@
 <?php
 	session_start();
+	require_once 'Dao.php';
+
 	$username = $_POST['username'];
 	$password = $_POST['password'];
-echo $username;
+
 	$messages = array();
-  $presets = array();
+  $_SESSION['presets']=array($_POST);
+
 	$bad = false;
 
-	//$_SESSION['presets']['username'] = $username;
 
   if(empty($username)){
 		$_SESSION['messages'] = "Username is Required";
@@ -17,19 +19,16 @@ echo $username;
 		$_SESSION['messages'] = "Password is Required";
 		$bad = true;
 	}
+	if(1!=preg_match('~[1-9]~', $password)||1!=preg_match('~[A-Z]~', $password)){
+		$messages[]="PLEASE ENTER A PASSWORD WITH NUMBER AND CAPITAL LETTER";
+		$bad = true;
+	}
 
-//	if (!preg_match('~[1-9]~', $password)||!preg_match('~[A-Z]~', $password)) {
-	//	$_SESSION['messages'][] = "Password must have at least one number and one uppercase letter.";
-//		$bad=true;
-//	}
 
 
-	require_once 'Dao.php';
 	$dao = new Dao();
-	echo "here";
 
 	if(isset($_POST['CreateButton'])){
-		echo "here";
 		if($bad){
 			$_SESSION['validated'] = 'bad';
 			header('Location: 01NewLogon.php');
@@ -48,7 +47,6 @@ echo $username;
 			exit;
 		}
 	}else if (isset($_POST['LoginButton'])){
-		echo "here";
 
 		if($bad){
 	    header('Location: 01LogonPage.php');
