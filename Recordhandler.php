@@ -28,7 +28,6 @@
     }
 
     if($bad){
-      echo "check";
       $_SESSION['validated'] = 'bad';
       header('Location: 03Record.php');
       exit;

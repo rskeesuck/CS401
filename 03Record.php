@@ -2,6 +2,7 @@
 <?php $thisPage = "03Record"; ?>
 <?php
 session_start();
+$message = $_SESSION['messages'];
 if (empty($_SESSION['logged_in'])) {
 		header('Location: 01LogonPage.php');
 		exit;
