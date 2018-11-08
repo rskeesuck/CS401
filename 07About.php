@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php session_start(); ?>
 <?php $thisPage = "07About"; ?>
 <html>
     <head>
@@ -13,7 +14,7 @@
       }
        include "header.php";
         ?>
-        
+
     <div class="divcontainer">
       <div>
         <h2>Who we are...</h2>

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php session_start(); ?>
 <?php $thisPage = "06Help"; ?>
 <html>
     <head>
@@ -13,7 +14,7 @@
       }
        include "header.php";
         ?>
-        
+
     <div class="divcontainer">
       <div>
         <h2>Need Help?  Well, here ya go...</h2>
