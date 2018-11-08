@@ -35,7 +35,7 @@
     $_SESSION['messages'] = "Thank you for your submission!";
 
 		}
-    header('Location: 02UserHome.php');
+    //header('Location: 03Record.php');
     exit;
 
   ?>
