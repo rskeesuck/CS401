@@ -19,14 +19,14 @@
   if(isset($_POST['Submit'])){
 
     if(empty($student_first)){
-      echo $student_first;
+      //echo $student_first;
       $_SESSION['messages'] = "Student first name is required.";
       $bad = true;
     }
     if(empty($student_last)){
-      echo $student_last;
+      //echo $student_last;
       $_SESSION['messages'] = "Student last name is required.";
-      echo "check";
+      //echo "check";
       $bad = true;
     }
 
