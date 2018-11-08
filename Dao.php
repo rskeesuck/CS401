@@ -82,4 +82,5 @@ public function addUser($username, $password){
         $q->execute();
         $result=$q->fetchAll();
         return $result;
+      }
 ?>
