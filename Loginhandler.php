@@ -10,11 +10,11 @@ echo $username;
 	//$_SESSION['presets']['username'] = $username;
 
   if(empty($username)){
-		$_SESSION['messages'][] = "Username is Required";
+		$_SESSION['messages'] = "Username is Required";
 		$bad = true;
 	}
 	if(empty($password)){
-		$_SESSION['messages'][] = "Password is Required";
+		$_SESSION['messages'] = "Password is Required";
 		$bad = true;
 	}
 

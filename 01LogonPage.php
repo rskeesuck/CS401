@@ -3,7 +3,7 @@
 
 <?php
   session_start();
-    $message = $_SESSION['message'];
+    $message = $_SESSION['messages'];
 ?>
 <html>
     <head>
@@ -20,7 +20,7 @@
         <?php if(!empty($message)) { ?>
           <div class="message"><?php echo "here"; ?></div>
         <?php
-             unset($_SESSION['message']);
+             unset($_SESSION['messages']);
         } ?>
 
         <div class = "form">
