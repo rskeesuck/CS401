@@ -8,11 +8,11 @@
     <body>
       <?php
       if(!empty($_SESSION("logged_in"))){
-        include_once "loggedin_navbar.php";
+        include "loggedin_navbar.php";
       }else{
-        include_once "navbar.php";
+        include "navbar.php";
       }
-       include_once "header.php";
+       include "header.php";
         ?>
 
       <div class = "photo">

@@ -3,7 +3,7 @@
 <?php
 session_start();
 if (empty($_SESSION['logged_in'])) {
-		header('Location: 01LogoPage.php');
+		header('Location: 01LogonPage.php');
 		exit;
   }
   ?>
