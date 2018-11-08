@@ -32,7 +32,7 @@ if (empty($_SESSION['logged_in'])) {
 	</div>
     <div class = "form">
       <h3>Who was it?  Student Name (First, Last)</h3>
-      <form action="/Recordhandler.php">
+      <form action="/Recordhandler.php" method = "POST">
         First Name of Student:<br>
         <input type="text" name="firstname"><br>
         Last Name of Student:<br>
