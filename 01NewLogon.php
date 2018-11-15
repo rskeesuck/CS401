@@ -30,11 +30,11 @@
           <div class = "form">
             <h3>New Account?  Sign in Here:</h3>
               <form action="/Loginhandler.php" method = "POST">
-                Username:<br>
-                <input type="text" placeholder = "Username" name="username"><br>
+                <label for="username">Username:</label><br>
+                <input type="text" placeholder = "Username" name="username" id="username"><br>
                 <br>
-                Password: (must contain at least one capital letter and number)<br>
-                <input type="text" placeholder = "password here" name="password"><br>
+                <label for="password">Password: (must contain at least one capital letter and number)</label><br>
+                <input type="text" placeholder = "password here" name="password" id="password"><br>
                 <br>
                 Submit:<br>
                 <button type="submit" value="CreateButton" name="CreateButton">Create New Account</button>

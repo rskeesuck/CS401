@@ -30,11 +30,11 @@
         <div class = "form">
           <h3>Please Sign In:</h3>
           <form action="/Loginhandler.php" method = "POST">
-           Username:<br>
-            <input type="text" placeholder = "username here" name="username"><br>
+           <label for="username">Username:</label><br>
+            <input type="text" placeholder = "username here" name="username" id="username"><br>
             <br>
-            Password:<br>
-            <input type="text" placeholder = "password here" name="password"><br>
+            <label for="password">Password:</label><br>
+            <input type="text" placeholder = "password here" name="password" id="password"><br>
             <br>
             Submit:<br>
             <button type="submit" value="LoginButton" name="LoginButton">Login</button>

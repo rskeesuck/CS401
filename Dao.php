@@ -20,13 +20,14 @@ class Dao{
 
 public function addUser($username, $password){
       //$this->log->LogInfo("Save comment [{$name}][{$comment}]");
-      $salt=$password . $username;
-      $hashPass = hash('sha256', $salt);
+      //$salt=$password . $username;
+      //$hashPass = hash('sha256', $salt);
       $conn=$this->getConnection();
 			$saveQuery = $conn->prepare(
 				"INSERT INTO accounts (username, password) VALUES (:username, :password)");
 			$saveQuery->bindParam(":username", $username);
-			$saveQuery->bindParam(":password", $hashPass);
+      $saveQuery->bindParam(":password", $password);
+			//$saveQuery->bindParam(":password", $hashPass);
       $saveQuery->execute();
   }
 
@@ -39,12 +40,13 @@ public function addUser($username, $password){
 }
 
   public function getUserPassword($username, $password){
-    $salt=$password . $username;
-    $hashPass = hash('sha256', $salt);
+    //$salt=$password . $username;
+    //$hashPass = hash('sha256', $salt);
     $conn=$this->getConnection();
 		$q=$conn->prepare("SELECT username FROM accounts WHERE username=:username AND password=:password");
 		$q->bindParam(":username", $username);
-		$q->bindParam(":password", $hashPass);
+    $q->bindParam(":password", $password);
+		//$q->bindParam(":password", $hashPass);
 		$q->setFetchMode(PDO::FETCH_ASSOC);
 		$q->execute();
 		$result=$q->fetchAll();
@@ -52,8 +54,8 @@ public function addUser($username, $password){
 	}
 
     public function validateUser($username, $password){
-      $salt=$password . $username;
-      $hashPass = hash('sha256', $salt);
+      //$salt=$password . $username;
+      //$hashPass = hash('sha256', $salt);
       $conn=$this->getConnection();
       $stmt = $conn->prepare("SELECT * FROM accounts WHERE username = :username");
       $stmt->bindparam(":username", $username);
