@@ -46,6 +46,36 @@
         <p>Easily collect behavior data on your class and for any student in the building.  Pull reports from the student you are tracking to search for patterns in behavior.</p>
       </div>
 
+
+      <div>
+        <img class="mySlides" src="Lockers.png">
+        <img class="mySlides" src="Students.png">
+        <img class="mySlides" src="Graduate.png">
+
+        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+        <script>
+          var slideIndex = 1;
+          showDivs(slideIndex);
+
+          function plusDivs(n) {
+            showDivs(slideIndex += n);
+          }
+
+          function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+          }
+          </script>
+      </div>
+
       <div class = "photo">
         <img src="Lockers.png" alt= "Student Lockers" width =33%>
         <img src="Students.png" alt= "Student Lockers" width =33%>
