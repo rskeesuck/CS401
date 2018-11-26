@@ -47,13 +47,14 @@
       </div>
 
 
-      <div>
-        <img class="mySlides" src="Lockers.png">
-        <img class="mySlides" src="Students.png">
-        <img class="mySlides" src="Graduate.png">
+      <div class = "photo">
+        <img class="mySlides" src="Lockers.png" style="width:100%">
+        <img class="mySlides" src="Students.png" style="width:100%">
+        <img class="mySlides" src="Graduate.png" style="width:100%">
 
-        <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+      </div>
 
         <script>
           var slideIndex = 1;
@@ -74,13 +75,6 @@
             x[slideIndex-1].style.display = "block";
           }
           </script>
-      </div>
-
-      <div class = "photo">
-        <img src="Lockers.png" alt= "Student Lockers" width =33%>
-        <img src="Students.png" alt= "Student Lockers" width =33%>
-        <img src="Graduate.png" alt= "Student Lockers" width =33%>
-      </div>
 
       <?php include_once "footer.php"; ?>
     </body>
