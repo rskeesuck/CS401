@@ -45,10 +45,11 @@ if (empty($_SESSION['logged_in'])) {
       	<br>
 
     </div>
+		<div class="divcontainer">
       <div class = "photo">
           <img src="FakeNews.jpg" alt= "Fake Newspaper" width="50%" class = "center">
       </div>
-
+		</div>
       <?php include_once "footer.php"; ?>
 
     </body>
