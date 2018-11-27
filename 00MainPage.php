@@ -16,7 +16,13 @@
         ?>
 
       <div class = "photo">
-          <img src="TeacherMAIN01.png" alt= "Teacher writing on board" width="100%">
+        <img class="mySlides" src="MAIN01.png" style="width:100%">
+        <img class="mySlides" src="MAIN02.png" style="width:100%">
+        <img class="mySlides" src="MAIN03.png" style="width:100%">
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
       </div>
 
     <div class = "divcontainer">
@@ -46,15 +52,6 @@
         <p>Easily collect behavior data on your class and for any student in the building.  Pull reports from the student you are tracking to search for patterns in behavior.</p>
       </div>
 
-
-      <div class = "photo">
-        <img class="mySlides" src="Lockers.png" style="width:100%">
-        <img class="mySlides" src="Students.png" style="width:100%">
-        <img class="mySlides" src="Graduate.png" style="width:100%">
-
-        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-      </div>
 
         <script>
           var slideIndex = 1;
