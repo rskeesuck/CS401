@@ -22,6 +22,12 @@ if (empty($_SESSION['logged_in'])) {
 
 					?>
     <div class = "divcontainer">
+			<form action="/02UserHome.php">
+				Back to "My Students":<br>
+				<br>
+				<button type="submit" value="GoToMyStudents" name="MyStudentsButton"> Go Back to My Students</button>
+			</form>
+			<br>
       <h4>Create an Individual Student Report</h4>
 
 			<table>
@@ -49,11 +55,7 @@ if (empty($_SESSION['logged_in'])) {
       <div class = "photo">
           <img src="FakeNews.jpg" alt= "Fake Newspaper" width="100%" class = "center">
 					<br>
-					<form action="/02UserHome.php">
-						Back to "My Students":<br>
-						<br>
-						<button type="submit" value="GoToMyStudents" name="MyStudentsButton"> Go Back to My Students</button>
-					</form>
+
       </div>
 		</div>
       <?php include_once "footer.php"; ?>
