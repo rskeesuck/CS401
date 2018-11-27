@@ -37,7 +37,7 @@ public function addUser($username, $password){
   public function getUsername($username){
   		$conn=$this->getConnection();
       $q=$conn->prepare("SELECT username FROM accounts WHERE username=:username");
-		    $q->bindParam(":username", $name);
+		    $q->bindParam(":username", $username);
 		    $q->setFetchMode(PDO::FETCH_ASSOC);
 		    $q->execute();
 		    $result=$q->fetchAll();
