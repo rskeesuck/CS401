@@ -16,9 +16,9 @@
         ?>
 
       <div class = "photo">
-        <img class="mySlides" src="MAIN01.png" style="width:80%">
-        <img class="mySlides" src="MAIN02.png" style="width:80%">
-        <img class="mySlides" src="MAIN03.png" style="width:80%">
+        <img class="mySlides" src="MAIN01.png" style="width:100%">
+        <img class="mySlides" src="MAIN02.png" style="width:100%">
+        <img class="mySlides" src="MAIN03.png" style="width:100%">
 
       </div>
         <br>
@@ -63,7 +63,7 @@
             slideIndex++;
             if (slideIndex > x.length) {slideIndex = 1}
             x[slideIndex-1].style.display = "block";
-            setTimeout(carousel, 2000); // Change image every 2 seconds
+            setTimeout(carousel, 3000); // Change image every 2 seconds
           }
           </script>
 
