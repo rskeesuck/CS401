@@ -38,27 +38,27 @@
 	if(isset($_POST['CreateButton'])){
 		$user=$dao->getUsername($username);
 		if(empty($user)){
-			$dao->addUser($username, $password);
-			$_SESSION['logged_in']=true;
-			header('Location: 02UserHome.php');
-			exit;
+					$dao->addUser($username, $password);
+					$_SESSION['logged_in']=true;
+					header('Location: 02UserHome.php');
+					exit;
 		}else{
-			$_SESSION['messages'][]="That username already exists";
-			$_SESSION['logged_in']=false;
-			header('Location: 01LogonPage.php');
-			exit;
+					$_SESSION['messages'][]="That username already exists";
+					$_SESSION['logged_in']=false;
+					header('Location: 01LogonPage.php');
+					exit;
 		}
 	}else if (isset($_POST['LoginButton'])){
-		$login=$dao->getUserPassword($username, $password);
-		if($login){
-			$_SESSION['logged_in']=true;
-			header('Location: 02UserHome.php');
-			exit;
+			$login=$dao->getUserPassword($username, $password);
+			if($login){
+					$_SESSION['logged_in']=true;
+					header('Location: 02UserHome.php');
+					exit;
 		}else{
-			$_SESSION['messages'][]="Username or Password is incorrect.";
-			$_SESSION['logged_in']=false;
-			header('Location: 01LogonPage.php');
-			exit;
+					$_SESSION['messages'][]="Username or Password is incorrect.";
+					$_SESSION['logged_in']=false;
+					header('Location: 01LogonPage.php');
+					exit;
 		}
 	}
 

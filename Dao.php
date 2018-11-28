@@ -55,7 +55,7 @@ public function addUser($username, $password){
     $salt=$password . $username;
     $hashPass = hash('sha256', $salt);
     $conn=$this->getConnection();
-		$q=$conn->prepare("SELECT username FROM accounts WHERE username=:username AND password=:password");
+		$q=$conn->prepare("SELECT username FROM accounts WHERE username = :username AND password = :password");
 		$q->bindParam(":username", $username);
     //$q->bindParam(":password", $password);
 		$q->bindParam(":password", $hashPass);
