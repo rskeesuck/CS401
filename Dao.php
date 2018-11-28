@@ -81,7 +81,7 @@ public function addUser($username, $password){
     //      return false;
   //    }
   //    return false;
-    }
+    //}
 
     public function addStudent($student_first, $student_last, $student_gender, $student_grade){
       $conn=$this->getConnection();
