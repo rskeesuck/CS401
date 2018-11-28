@@ -45,9 +45,9 @@
             <button type="submit" value="LoginButton" name="LoginButton">Login</button>
             <br>
             <br>
-          </form>
+
           <h3>New to SchoolBROS?  Enter a Username and Password above and start here!</h3>
-          <form action="/Loginhandler.php" method = "POST">
+        
             New Account?<br><br>
             <button type="submit" value="CreateButton" name="CreateButton">Create New Account</button>
           </form>
