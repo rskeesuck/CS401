@@ -21,8 +21,8 @@ class Dao{
 
 public function addUser($username, $password){
       //$this->log->LogInfo("Save comment [{$name}][{$comment}]");
-      //$salt=$password . $username;
-      //$hashPass = hash('sha256', $salt);
+      $salt=$password . $username;
+      $hashPass = hash('sha256', $salt);
       $conn=$this->getConnection();
 			$saveQuery = $conn->prepare(
 				"INSERT INTO accounts (username, password) VALUES (:username, :password)");
@@ -32,7 +32,8 @@ public function addUser($username, $password){
       //$saveQuery->bindParam(":username", $username);
       //$saveQuery->bindParam(":password", $password);
 			//$saveQuery->bindParam(":password", $hashPass);
-      $saveQuery->execute();
+      //$saveQuery->execute();
+      $q->execute();
   }
 //Checks username
   public function getUsername($username){
