@@ -21,7 +21,7 @@
 
       <div class="divcontainer">
 
-        <?php if(!empty($message)) {
+        <?php (isset($_SESSION['message']))) {
           foreach($_SESSION['messages'] as $message)
           ?>
           <div class="message">
