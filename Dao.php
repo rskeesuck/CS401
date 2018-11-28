@@ -52,8 +52,8 @@ public function addUser($username, $password){
 }
   //checks username and password
   public function getUserPassword($username, $password){
-    $salt=$password . $username;
-    $hashPass = hash('sha256', $salt);
+    //$salt=$password . $username;
+    //$hashPass = hash('sha256', $salt);
     $conn=$this->getConnection();
 		$q=$conn->prepare("SELECT username FROM accounts WHERE username = :username AND password = :password");
 		$q->bindParam(":username", $username);
