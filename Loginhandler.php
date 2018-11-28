@@ -6,7 +6,8 @@
 	$password = $_POST['password'];
 
 	$messages = array();
-  $_SESSION['presets']=array($_POST);
+  //$_SESSION['presets']=array($_POST);
+	$_SESSION['presets']['username'] = $username;
 
 	$bad = false;
 
