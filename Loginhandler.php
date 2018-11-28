@@ -80,6 +80,7 @@
 //			$_SESSION['validated'] = 'bad';
 //			header('Location: 01NewLogon.php');
 //			exit;
+
 //		$user=$dao->getUsername($username);
 //		if(empty($user)){
 //			$dao->addUser($username, $password);

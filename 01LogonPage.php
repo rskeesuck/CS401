@@ -22,7 +22,14 @@
       <div class="divcontainer">
 
         <?php if(!empty($message)) { ?>
-          <div class="message"><?php echo $message; ?></div>
+          <div class="message">
+
+        <?php if (isset($_SESSION['message'])){
+				      foreach($_SESSION['message'] as $messages){?>
+				      <div class="message">
+
+            <?php echo $message; ?></div>
+
         <?php
              unset($_SESSION['messages']);
         } ?>
@@ -31,7 +38,8 @@
           <h3>Please Sign In:</h3>
           <form action="/Loginhandler.php" method = "POST">
            <label for="username">Username:</label><br>
-            <input type="text" placeholder = "username here" name="username" id="username"><br>
+
+				    <input type="text" name="username" id="username" value="<?php echo isset($_SESSION['presets']['username']) ? $_SESSION['presets']['username'] : ''; ?>"><br>
             <br>
             <label for="password">Password:</label><br>
             <input type="text" placeholder = "password here" name="password" id="password"><br>
