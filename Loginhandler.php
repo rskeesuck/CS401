@@ -50,6 +50,7 @@
 		}
 	}else if (isset($_POST['LoginButton'])){
 			$login=$dao->getUserPassword($username, $password);
+			echo $password;
 			if($login){
 					$_SESSION['logged_in']=true;
 					header('Location: 02UserHome.php');
@@ -57,8 +58,7 @@
 		}else{
 					$_SESSION['messages'][]="Username or Password is incorrect.";
 					$_SESSION['logged_in']=false;
-					//header('Location: 01LogonPage.php');
-					header('Location: 00MainPage.php');
+					header('Location: 01LogonPage.php');
 					exit;
 		}
 	}
