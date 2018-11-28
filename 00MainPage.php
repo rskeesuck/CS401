@@ -22,34 +22,19 @@
 
       </div>
         <br>
-    <h3>Track School-wide B-RTI programs in real time.</h3>
+    <h2>Track School-wide B-RTI programs in real time.</h2>
 
     <div class = "maintext">
-        <p>Easily collect behavior data on your class and for any student in the building.  Pull reports from the student you are tracking to search for patterns in behavior.</p>
-    </div>
+        <p>
+          Easily collect behavior data on your class and for any student in the building.
+          Pull reports from the student you are tracking to search for patterns in behavior.
+          Help build systems for your school by understanding patterns within the classroom
+          and around the school grounds.
 
-    <div class = "divcontainer">
-        <div class = "form" class = "mainlog">
-            <h3>Please Sign In:</h3>
-            <form action="/01LogonPage.php">
-              Users Logon Here:<br>
-              <br>
-              <button type="submit" value="GoToLogon" name="GoToLogon">Login Page</button>
-              <br>
-              <br>
-            </form>
-            <form action="/01NewLogon.php">
-              New to SchoolBROS?<br>
-              <br>
-              <button type="submit" value="NewAccount" name="NewAccountButton"> Set Up New Account</button>
-            </form>
-        </div>
-        <br>
+        </p>
     </div>
 
     <br>
-
-
         <script>
         var slideIndex = 0;
           carousel();
