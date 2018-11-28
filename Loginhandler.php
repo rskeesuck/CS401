@@ -45,7 +45,7 @@
 		}else{
 			$_SESSION['messages'][]="That username already exists";
 			$_SESSION['logged_in']=false;
-			header('Location: 01NewLogon.php');
+			header('Location: 01LogonPage.php');
 			exit;
 		}
 	}else if (isset($_POST['LoginButton'])){
