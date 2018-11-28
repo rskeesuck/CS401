@@ -49,8 +49,8 @@
 					exit;
 		}
 	}else if (isset($_POST['LoginButton'])){
+				echo $password;
 			$login=$dao->getUserPassword($username, $password);
-			echo $password;
 			if($login){
 					$_SESSION['logged_in']=true;
 					header('Location: 02UserHome.php');
