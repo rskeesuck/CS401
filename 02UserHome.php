@@ -36,7 +36,7 @@ if (empty($_SESSION['logged_in'])) {
 		</div>
       <br>
       <div class = "photo">
-        <img src="Pencils.jpg" alt= "Pencils" width =75% class="center">
+        <img src="ReportGraphic.png" alt= "Pencils" width =100% class="center">
       </div>
 
       <?php include_once "footer.php"; ?>
