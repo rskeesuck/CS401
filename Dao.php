@@ -13,9 +13,10 @@ class Dao{
   	}
 
   public function getConnection () {
-    $conn= new PDO("mysql:host={$this->host};dbname={$this->db}", $this->user,
-          $this->pass);
-    return $conn;
+    //$conn=
+    return
+    new PDO("mysql:host={$this->host};dbname={$this->db}", $this->user, $this->pass);
+    //return $conn;
 }
 
 public function addUser($username, $password){
