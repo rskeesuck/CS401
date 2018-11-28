@@ -30,19 +30,19 @@
       </div>
 
       <div class = "maintext">
-        <h4>How much time will this take?</h4>
+        <h3>How much time will this take?</h3>
         <br>
         <p>Running the program won't take much time at all!  Most entries can be done in under a minute.</p>
         <br>
-        <h4>What about tracking students?</h4>
+        <h3>What about tracking students?</h3>
         <br>
         <p>Yes.  You'll be able to track the "most popular" students along with making new entries for newcommers.</p>
         <br>
-        <h4>Can I get reports on a student?</h4>
+        <h3>Can I get reports on a student?</h3>
         <br>
         <p>Of course!  You can run an individual student report to help narrow down behaviors over time.</p>
         <br>
-        <h4>If I were a hot dog, would you eat me?</h4>
+        <h3>If I were a hot dog, would you eat me?</h3>
         <br>
         <p>I would.  I love hot dogs.</p>
         <br>

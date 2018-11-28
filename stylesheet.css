@@ -60,7 +60,7 @@ span{
 .address{
   background-color: #d3d3d3;
   color: #1d262c;
-  font-family: "Trebuchet", Trebuchet, sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   padding-bottom: 50px;
   text-align: center;
 }
@@ -69,7 +69,7 @@ span{
 .form{
   background-color: #d3d3d3;
   color: #1d262c;
-  font-family: "Trebuchet", Trebuchet, sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   padding-bottom: 50px;
 
 }
@@ -131,7 +131,7 @@ color: #1d262c;
 
 .signup {
 
-    font-family: "Trebuchet", Trebuchet, sans-serif;
+    font-family: 'Advent Pro', sans-serif;
     height: 50px;
     width: 200px;
     background-color: #1d262c;
@@ -149,7 +149,7 @@ color: #1d262c;
 }
 
 .button{
-  font-family: "Trebuchet", Trebuchet, sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   height: 50px;
   width: 200px;
   background-color: #1d262c;
@@ -174,7 +174,7 @@ color: #1d262c;
 }
 
 .login{
-  font-family: "Trebuchet", Trebuchet, sans-serif;
+  font-family: 'Advent Pro', sans-serif;
   color: #1d262c;
   padding-bottom: 50px;
 }
