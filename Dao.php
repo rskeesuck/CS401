@@ -26,7 +26,7 @@ public function addUser($username, $password){
       $conn=$this->getConnection();
 			//$saveQuery = $conn->prepare(
       $saveQuery =
-				"INSERT INTO accounts (username, password) VALUES (:username, :password)");
+				"INSERT INTO accounts (username, password) VALUES (:username, :password)";
       $q=$conn ->prepare($saveQuery);
       $q->bindParam(":username", $username);
       $q->bindParam(":password", $hashPass);
