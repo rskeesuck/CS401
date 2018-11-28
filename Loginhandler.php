@@ -26,7 +26,7 @@
 		}
 
 		if($bad){
-			header('Location: 01NewLogon.php');
+			header('Location: 01LogonPage.php');
 			exit;
 		}
 
